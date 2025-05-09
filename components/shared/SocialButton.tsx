@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { SocialButtonProp } from "@/types/props.types";
+import { SocialButtonProp } from "@/types/Props";
 
 export function SocialButton({
   href,

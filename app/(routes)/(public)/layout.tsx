@@ -7,7 +7,7 @@ export default function PublicLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <div className="border-2 border-black">
+    <div>
       <Header />
       <main>{children}</main>
       <Footer />

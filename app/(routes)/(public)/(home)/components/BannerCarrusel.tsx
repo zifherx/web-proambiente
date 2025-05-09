@@ -1,6 +1,9 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Autoplay from "embla-carousel-autoplay"
 
 import {
   Carousel,
@@ -10,21 +13,23 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export function BannerCarrusel() {
+
+  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: false}))
+
   return (
-    <section className="relative">
-      <Carousel className="w-full">
+    <section className="relativ">
+      <Carousel className="w-full" opts={{ loop: true}} plugins={[plugin.current]}>
         <CarouselContent>
           <CarouselItem>
-            <div className="relative h-[70vh] w-full border-2 border-purple-600">
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+            <div className="relative h-[80vh] w-full bg-gray-200">
+              <div className="absolute inset-0 flex flex-col justify-center items-center text-left p-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="max-w-4xl border-2 border-orange-600"
+                  className="max-w-4xl"
                 >
                   <h1 className="text-3xl md:text-5xl font-bold mb-4">
                     Creando entornos saludables
@@ -51,13 +56,13 @@ export function BannerCarrusel() {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="relative h-[70vh] w-full border-2 border-gray-700">
+            <div className="relative h-[80vh] w-full bg-green-100">
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="max-w-4xl border-2 border-orange-600"
+                  className="max-w-4xl"
                 >
                   <h1 className="text-3xl md:text-5xl font-bold mb-4">
                     Profesionales en nuestra labor
@@ -84,13 +89,13 @@ export function BannerCarrusel() {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="relative h-[70vh] w-full border-2 border-green-500">
+            <div className="relative h-[80vh] w-full bg-cyan-100">
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="max-w-4xl border-2 border-orange-600"
+                  className="max-w-4xl"
                 >
                   <h1 className="text-3xl md:text-5xl font-bold mb-4">
                     Equipos de alta tecnología

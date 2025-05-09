@@ -1,10 +1,10 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { Mail, Menu, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { Mail, Menu, Phone } from "lucide-react";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -16,6 +16,8 @@ import {
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +34,7 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-white/50 backdrop-blur-sm shadow-sm" : "bg-white"
+        isScrolled ? "bg-white/90 backdrop-blur-sm shadow-sm" : "bg-white"
       )}
     >
       <div className="hidden md:flex items-center justify-end bg-blueAmbiente text-white px-5 py-1 text-sm">
@@ -56,10 +58,10 @@ export function Header() {
           </span>
         </div>
       </div>
-      <div className="container mx-auto flex h-16 items-center justify-between">
+      <div className="max-w-7xl mx-auto flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/Logo_Pro_Ambiente_Blanco.png"
+            src="/images/Logo_Pro_Ambiente_PNG.png"
             alt="ProAmbiente Logo"
             width={180}
             height={50}
@@ -71,13 +73,13 @@ export function Header() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/" passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent")}>
                   Inicio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Nosotros</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-transparent">Nosotros</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-4 w-[400px]">
                   <li className="row-span-3">
@@ -126,7 +128,7 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Servicios</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-transparent">Servicios</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[500px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                   <li>
@@ -196,7 +198,7 @@ export function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/contacto" passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent")}>
                   Contacto
                 </NavigationMenuLink>
               </Link>
