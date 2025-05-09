@@ -8,6 +8,7 @@ import {
   Service,
   ServiceBenefits,
   ServiceFeature,
+  ServiceProcess,
 } from "@/interfaces";
 
 export type SocialButtonProp = {
@@ -101,6 +102,14 @@ export type HeroServiceProp = ServiceCard & {
 
 export type ServiceCard = {
   service: Service;
+};
+
+export type ServiceList = {
+  services: Service[];
+};
+
+export type ServiceProcessProp = {
+  process: ServiceProcess[];
 };
 
 export type BenefitsServiceProp = {

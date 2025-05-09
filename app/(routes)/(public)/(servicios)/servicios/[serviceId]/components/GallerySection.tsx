@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeInWhenVisible } from "@/components/shared/FadeInWhenVisible";
-import { ImageGallery } from "./ImageGallery";
+import { ImageGallery } from "./shared/ImageGallery";
 import { ServiceCard } from "@/types/Props";
 
 export function GallerySection({ service }: ServiceCard) {
