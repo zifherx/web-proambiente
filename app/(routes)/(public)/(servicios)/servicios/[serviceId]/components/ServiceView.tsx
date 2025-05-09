@@ -1,25 +1,28 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { notFound } from 'next/navigation';
+import React from "react";
+import { notFound } from "next/navigation";
 
-import { HeroSection } from './HeroSection';
+import { HeroSection } from "./HeroSection";
 
-import { getAllServices, getServiceBySlug } from '@/data';
+import { getServiceBySlug } from "@/data";
+import { CaracteristicasSection } from "./CaracteristicasSection";
+import { GallerySection } from "./GallerySection";
 
-export function ServiceView({serviceSlug} : {serviceSlug: string}) {
+export function ServiceView({ serviceSlug }: { serviceSlug: string }) {
   const service = getServiceBySlug(serviceSlug);
-    const services = getAllServices();
-  
-    if (!service) {
-      notFound();
-    }
-  
-    const Icon = service.icon;
-  
-    return (
-      <>
-        <HeroSection service={service} icon={Icon} />
-      </>
-    );
+
+  if (!service) {
+    notFound();
+  }
+
+  const Icon = service.icon;
+
+  return (
+    <>
+      <HeroSection service={service} icon={Icon} />
+      <CaracteristicasSection service={service} />
+      <GallerySection service={service} />
+    </>
+  );
 }

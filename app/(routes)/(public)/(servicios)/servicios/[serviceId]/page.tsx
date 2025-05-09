@@ -1,14 +1,15 @@
 import { ServiceView } from "./components/ServiceView";
 
-export default function ServiceOnePage({
-    params,
-  }: {
-    params: { serviceId: string };
-  }) {
+export default async function ServiceOnePage({
+  params,
+}: {
+  params: { serviceId: string };
+}) {
+  const { serviceId } = await params;
 
-    return (
+  return (
     <>
-      <ServiceView serviceSlug={params.serviceId} />
+      <ServiceView serviceSlug={serviceId} />
     </>
   );
 }

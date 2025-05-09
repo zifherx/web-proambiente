@@ -69,7 +69,7 @@ export function HeroSection({ icon: Icon, service }: HeroServiceProp) {
             <div className="absolute -right-4 -top-4 h-32 w-32 rounded-full bg-blueAmbiente/10 blur-xl"></div>
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src={service.coverImage || "https://placehold.co/600x400"}
+                src={`/images/services/${service.slug}/${service.coverImage}`}
                 alt={service.title}
                 width={600}
                 height={400}
