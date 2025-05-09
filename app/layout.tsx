@@ -1,11 +1,13 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
+import NextTopLoader from 'nextjs-toploader';
 
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
 
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,8 +61,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+          <NextTopLoader 
+            color="#19ad00"
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={5}
+            crawl={true}
+            showSpinner={true}
+            easing="ease"
+            speed={200}
+            shadow="0 0 10px #19ad00,0 0 5px #19ad00"
+          />
         {children}
         <ScrollToTop />
+        <Toaster/>
       </body>
     </html>
   );
