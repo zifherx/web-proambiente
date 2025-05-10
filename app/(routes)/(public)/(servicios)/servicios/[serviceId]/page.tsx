@@ -3,9 +3,10 @@ import { ServiceView } from "./components/ServiceView";
 export default async function ServiceOnePage({
   params,
 }: {
-  params: { serviceId: string };
+  params: Promise<{ serviceId: string }>;
 }) {
-  const { serviceId } = await params;
+  const resolvedParams = await params;
+  const { serviceId } = resolvedParams;
 
   return (
     <>

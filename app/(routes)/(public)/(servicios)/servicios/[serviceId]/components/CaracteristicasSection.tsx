@@ -1,9 +1,9 @@
 "use client";
 
 import { FadeInWhenVisible } from "@/components/shared/FadeInWhenVisible";
+import { ServiceBenefits } from "./shared/ServiceBenefits";
+import { ServiceFeatures } from "./shared/ServiceFeatures";
 import { ServiceCard } from "@/types/Props";
-import { ServiceBenefits } from "./ServiceBenefits";
-import { ServiceFeatures } from "./ServiceFeatures";
 
 export function CaracteristicasSection({ service }: ServiceCard) {
   return (

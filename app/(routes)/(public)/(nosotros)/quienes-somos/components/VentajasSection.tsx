@@ -23,6 +23,7 @@ export function VentajasSection() {
           {VentajasNosotrosData.map(
             ({ id, delay, description, icon, title }) => (
               <VentajaCard
+                id={id}
                 key={id}
                 delay={delay}
                 description={description}
@@ -34,9 +35,12 @@ export function VentajasSection() {
         </div>
 
         <div className="mt-12 text-center w-fit mx-auto text-white">
-          <Link href="/contacto" className="px-6 py-3 bg-blueAmbiente rounded-md flex items-center justify-center hover:bg-blueAmbiente/80 hover:shadow-lg">
+          <Link
+            href="/contacto"
+            className="px-6 py-3 bg-blueAmbiente rounded-md flex items-center justify-center hover:bg-blueAmbiente/80 hover:shadow-lg"
+          >
             Contáctanos
-            <ArrowRight className="ml-2 h-4 w-4"/>
+            <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>
       </div>

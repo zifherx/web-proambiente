@@ -17,7 +17,9 @@ export function ERPRuppiest() {
               <div className="inline-block bg-blueAmbiente/10 text-blueAmbiente font-medium px-4 py-2 rounded-full mb-4">
                 Tecnología Avanzada
               </div>
-              <h2 className="text-3xl font-bold mb-6">Sistema ERP Ruppiest</h2>
+              <h2 className="text-3xl font-bold mb-6">
+                Sistema ERP ProAmbiente
+              </h2>
               <p className="text-lg text-muted-foreground">
                 Implementamos el innovador sistema ERP Ruppiest que nos permite
                 optimizar procesos, mejorar la gestión de recursos y ofrecer un
@@ -27,8 +29,15 @@ export function ERPRuppiest() {
               <div className="space-y-4 mb-8">{}</div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild className="bg-blueAmbiente hover:bg-greenAmbiente">
-                  <Link href="https://app.rupipest.com/users/sign_in" target="_blank">
+                <Button
+                  size="lg"
+                  asChild
+                  className="bg-blueAmbiente hover:bg-greenAmbiente"
+                >
+                  <Link
+                    href="https://app.rupipest.com/users/sign_in"
+                    target="_blank"
+                  >
                     Portal Clientes
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -67,7 +76,7 @@ export function ERPRuppiest() {
                       </div>
 
                       <h3 className="text-center text-xl font-bold text-gray-800 mb-2">
-                        ERP Ruppiest
+                        ERP ProAmbiente
                       </h3>
                       <p className="text-center text-sm text-gray-600 mb-8">
                         Sistema de gestión integral

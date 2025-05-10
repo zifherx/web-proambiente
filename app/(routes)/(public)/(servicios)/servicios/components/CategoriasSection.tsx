@@ -44,7 +44,7 @@ export function CategoriasSection() {
             </TabsList>
           </div>
 
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="sync">
             {categories.map(({ key }) => (
               <TabsContent key={key} value={key}>
                 <motion.div
