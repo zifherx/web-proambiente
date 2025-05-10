@@ -1,4 +1,9 @@
-import { HTMLAttributeAnchorTarget, ReactNode } from "react";
+import {
+  Dispatch,
+  HTMLAttributeAnchorTarget,
+  ReactNode,
+  SetStateAction,
+} from "react";
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 import {
@@ -33,7 +38,7 @@ export type VentajasERPProp = {
   features: IFeatureERP[];
 };
 
-export type VentajasNosotrosProp = Partial<IVentajaNosotros>;
+export type VentajasNosotrosProp = IVentajaNosotros;
 
 export type RevealProp = {
   children: ReactNode;
@@ -118,6 +123,13 @@ export type BenefitsServiceProp = {
 
 export type FeaturesServiceProp = {
   features: ServiceFeature[];
+};
+
+export type SearchToolbarProp = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  gestorBusqueda: (e: any) => void;
+  parametroBusqueda: string;
+  setParametroBusqueda: Dispatch<SetStateAction<string>>;
 };
 
 export type VariantButton =

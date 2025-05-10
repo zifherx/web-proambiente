@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Menu, Phone } from "lucide-react";
+import { Mail, Menu, Phone, ShoppingCart } from "lucide-react";
 
 import {
   NavigationMenu,
@@ -73,13 +73,17 @@ export function Header() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/" passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent")}>
+                <NavigationMenuLink
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent")}
+                >
                   Inicio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent">Nosotros</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-transparent">
+                Nosotros
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-4 w-[400px]">
                   <li className="row-span-3">
@@ -128,7 +132,9 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent">Servicios</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-transparent">
+                Servicios
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[500px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                   <li>
@@ -197,8 +203,22 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <Link href="/productos" passHref>
+                <NavigationMenuLink
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent")}
+                >
+                  <span className="flex items-center">
+                    <ShoppingCart className="mr-1 h-4 w-4" />
+                    Productos
+                  </span>
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/contacto" passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent")}>
+                <NavigationMenuLink
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent")}
+                >
                   Contacto
                 </NavigationMenuLink>
               </Link>

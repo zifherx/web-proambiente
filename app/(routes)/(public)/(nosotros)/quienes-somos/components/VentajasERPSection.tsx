@@ -11,7 +11,7 @@ export function VentajasERPSection({ features }: VentajasERPProp) {
         <FadeInWhenVisible>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
-              Ventajas de nuestro ERP Ruppiest
+              Ventajas de nuestro ERP ProAmbiente
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Implementamos tecnología de vanguardia para optimizar nuestros
