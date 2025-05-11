@@ -2,11 +2,13 @@ import {
   IFeatureERP,
   IProcessDiagram,
   IVentajaNosotros,
+  Product,
   Service,
 } from "@/interfaces";
 import {
   ClientesProp,
   CounterProp,
+  ProductCategory,
   ServiceType,
   TestimoniosProp,
   ValoresProp,
@@ -25,6 +27,7 @@ import {
   Facebook,
   FileCheck,
   FileText,
+  Flame,
   Instagram,
   Lightbulb,
   Linkedin,
@@ -2074,4 +2077,1169 @@ export const getAllServiceCategories = (): {
 
 export const getAllServices = (): Service[] => {
   return ServiciosData;
+};
+
+export const ProductosData: Product[] = [
+  {
+    id: 1,
+    slug: "deltametrina-25-ec",
+    name: "Deltametrina 25 EC",
+    description:
+      "Insecticida piretroide de amplio espectro con efecto de derribe y residualidad. Efectivo contra una amplia gama de insectos voladores y rastreros. Ideal para el control de moscas, mosquitos, cucarachas, hormigas y otros insectos en ambientes domésticos, comerciales e industriales.",
+    shortDescription:
+      "Insecticida piretroide de amplio espectro con efecto de derribe y residualidad.",
+    category: "insecticidas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Amplio espectro de acción",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Efecto de derribe rápido",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Buena residualidad",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Baja toxicidad para mamíferos",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Estable en diversas condiciones ambientales",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Control de insectos voladores (moscas, mosquitos)",
+      },
+      {
+        id: 2,
+        aplication: "Control de insectos rastreros (cucarachas, hormigas)",
+      },
+      {
+        id: 3,
+        aplication: "Tratamiento residual en superficies",
+      },
+      {
+        id: 4,
+        aplication: "Aplicación en grietas y hendiduras",
+      },
+    ],
+    coverImage: "/products/deltametrina.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Bug,
+    stock: "disponible",
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    slug: "cipermetrina-25-ec",
+    name: "Cipermetrina 25 EC",
+    description:
+      "Insecticida piretroide de contacto e ingestión con amplio espectro de acción. Ofrece un excelente control de insectos en fase adulta y larvaria. Su formulación concentrada emulsionable permite una aplicación versátil en diversos ambientes y superficies.",
+    shortDescription:
+      "Insecticida piretroide de contacto e ingestión con amplio espectro de acción.",
+    category: "insecticidas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Acción por contacto e ingestión",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Efecto residual prolongado",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Estabilidad a la luz solar",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Baja toxicidad para mamíferos",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Versátil en diferentes aplicaciones",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Control de cucarachas, hormigas y arañas",
+      },
+      {
+        id: 2,
+        aplication: "Tratamiento de moscas y mosquitos",
+      },
+      {
+        id: 3,
+        aplication: "Aplicación en interiores y exteriores",
+      },
+      {
+        id: 4,
+        aplication: "Tratamiento perimetral de edificaciones",
+      },
+    ],
+    coverImage: "/products/cipermetrina.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Bug,
+    stock: "disponible",
+  },
+  {
+    id: 3,
+    slug: "alfacipermetrina-10-ec",
+    name: "Alfacipermetrina 10 EC",
+    description:
+      "Insecticida piretroide de última generación con mayor potencia que la cipermetrina convencional. Proporciona un control efectivo con dosis más bajas, lo que lo hace más económico y ecológico. Ideal para programas de rotación de insecticidas para prevenir resistencias.",
+    shortDescription:
+      "Insecticida piretroide de última generación con mayor potencia que la cipermetrina convencional.",
+    category: "insecticidas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Mayor potencia a dosis más bajas",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Excelente efecto de derribe",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Buena residualidad",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Menor impacto ambiental",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Ideal para rotación de productos",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Control de insectos resistentes",
+      },
+      {
+        id: 2,
+        aplication: "Tratamiento de áreas sensibles",
+      },
+      {
+        id: 3,
+        aplication: "Aplicación en interiores y exteriores",
+      },
+      {
+        id: 4,
+        aplication: "Control de plagas en industria alimentaria",
+      },
+    ],
+    coverImage: "/products/alfacipermetrina.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Bug,
+    stock: "disponible",
+    isNew: true,
+  },
+  {
+    id: 4,
+    slug: "brodifacoum-0025",
+    name: "Brodifacoum 0.025%",
+    description:
+      "Rodenticida anticoagulante de segunda generación altamente efectivo contra ratas y ratones, incluso resistentes a otros rodenticidas. Su formulación en bloques parafinados lo hace ideal para áreas húmedas o exteriores. Una sola ingesta es suficiente para alcanzar la dosis letal.",
+    shortDescription:
+      "Rodenticida anticoagulante de segunda generación altamente efectivo contra ratas y ratones.",
+    category: "rodenticidas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Alta palatabilidad para roedores",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Efectivo con una sola ingesta",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Resistente a condiciones húmedas",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Contiene amargante para prevenir ingesta accidental",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Formulación en bloques parafinados",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Control de ratas y ratones",
+      },
+      {
+        id: 2,
+        aplication: "Uso en estaciones de cebo",
+      },
+      {
+        id: 3,
+        aplication: "Aplicación en áreas húmedas",
+      },
+      {
+        id: 4,
+        aplication: "Tratamiento perimetral de edificaciones",
+      },
+    ],
+    coverImage: "/products/brodifacoum.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Rat,
+    stock: "disponible",
+    isFeatured: true,
+  },
+  {
+    id: 5,
+    slug: "bromadiolona-0005",
+    name: "Bromadiolona 0.005%",
+    description:
+      "Rodenticida anticoagulante de segunda generación en formulación de pellets. Ofrece un excelente control de ratas y ratones con una palatabilidad superior. Su acción retardada evita la asociación entre el consumo del cebo y la muerte, previniendo el rechazo del cebo por otros roedores.",
+    shortDescription:
+      "Rodenticida anticoagulante de segunda generación en formulación de pellets.",
+    category: "rodenticidas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Excelente palatabilidad",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Acción anticoagulante retardada",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Efectivo contra roedores resistentes",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Formulación en pellets",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Contiene amargante de seguridad",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Control de infestaciones severas",
+      },
+      {
+        id: 2,
+        aplication: "Uso en estaciones de cebo",
+      },
+      {
+        id: 3,
+        aplication: "Aplicación en áreas secas",
+      },
+      {
+        id: 4,
+        aplication: "Programas de control integrado",
+      },
+    ],
+    coverImage: "/products/bromadiolona.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Rat,
+    stock: "disponible",
+  },
+  {
+    id: 6,
+    slug: "amonio-cuaternario",
+    name: "Amonio Cuaternario",
+    description:
+      "Desinfectante de amplio espectro basado en sales de amonio cuaternario de quinta generación. Efectivo contra bacterias, hongos y virus. Su formulación no corrosiva lo hace ideal para superficies delicadas y equipos. Perfecto para la desinfección de áreas críticas en hospitales, industria alimentaria y espacios públicos.",
+    shortDescription:
+      "Desinfectante de amplio espectro basado en sales de amonio cuaternario de quinta generación.",
+    category: "desinfectantes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Amplio espectro antimicrobiano",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "No corrosivo para superficies",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Baja toxicidad",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Efectivo en presencia de materia orgánica",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Residualidad prolongada",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Desinfección de superficies",
+      },
+      {
+        id: 2,
+        aplication: "Sanitización de áreas críticas",
+      },
+      {
+        id: 3,
+        aplication: "Uso en industria alimentaria",
+      },
+      {
+        id: 4,
+        aplication: "Desinfección de equipos médicos",
+      },
+    ],
+    coverImage: "/products/amonio-cuaternario.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Droplets,
+    stock: "disponible",
+    isFeatured: true,
+  },
+  {
+    id: 7,
+    slug: "hipoclorito-sodio",
+    name: "Hipoclorito de Sodio 7.5%",
+    description:
+      "Desinfectante de alto nivel basado en cloro activo. Proporciona una desinfección rápida y efectiva contra un amplio espectro de microorganismos, incluyendo bacterias, virus y esporas. Ideal para la desinfección de áreas con alta carga microbiana o donde se requiere un nivel de desinfección superior.",
+    shortDescription: "Desinfectante de alto nivel basado en cloro activo.",
+    category: "desinfectantes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Acción desinfectante rápida",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Efectivo contra esporas",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Económico y versátil",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Alto poder oxidante",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Desinfección de nivel intermedio-alto",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Desinfección de superficies resistentes",
+      },
+      {
+        id: 2,
+        aplication: "Tratamiento de agua",
+      },
+      {
+        id: 3,
+        aplication: "Desinfección de áreas críticas",
+      },
+      {
+        id: 4,
+        aplication: "Eliminación de biofilms",
+      },
+    ],
+    coverImage: "/products/hipoclorito.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Droplets,
+    stock: "disponible",
+  },
+  {
+    id: 8,
+    slug: "alcohol-70",
+    name: "Alcohol 70%",
+    description:
+      "Solución desinfectante de rápida acción y evaporación. Efectiva contra bacterias, hongos y algunos virus. Su formulación permite una aplicación versátil en diversas superficies sin dejar residuos. Ideal para la desinfección rápida de superficies de contacto frecuente y equipos.",
+    shortDescription: "Solución desinfectante de rápida acción y evaporación.",
+    category: "desinfectantes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Rápida acción desinfectante",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "No deja residuos",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Fácil aplicación",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Evaporación rápida",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "No requiere enjuague",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Desinfección de superficies de contacto frecuente",
+      },
+      {
+        id: 2,
+        aplication: "Limpieza de equipos electrónicos",
+      },
+      {
+        id: 3,
+        aplication: "Desinfección rápida entre usos",
+      },
+      {
+        id: 4,
+        aplication: "Aplicación en áreas donde no se puede usar agua",
+      },
+    ],
+    coverImage: "/products/alcohol.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Droplets,
+    stock: "disponible",
+  },
+  {
+    id: 9,
+    slug: "jabon-antibacterial",
+    name: "Jabón Antibacterial",
+    description:
+      "Jabón líquido con propiedades antibacterianas para la higiene de manos. Su fórmula suave pero efectiva elimina bacterias y suciedad sin resecar la piel. Ideal para áreas de procesamiento de alimentos, centros de salud y espacios públicos donde la higiene de manos es crítica.",
+    shortDescription:
+      "Jabón líquido con propiedades antibacterianas para la higiene de manos.",
+    category: "sanitizantes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Elimina 99.9% de bacterias",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Fórmula suave para uso frecuente",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "pH balanceado",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Con agentes humectantes",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Fragancia agradable",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Higiene de manos en áreas críticas",
+      },
+      {
+        id: 2,
+        aplication: "Uso en dispensadores automáticos",
+      },
+      {
+        id: 3,
+        aplication: "Lavado frecuente de manos",
+      },
+      {
+        id: 4,
+        aplication: "Instalaciones de procesamiento de alimentos",
+      },
+    ],
+    coverImage: "/products/jabon-antibacterial.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Shield,
+    stock: "disponible",
+  },
+  {
+    id: 10,
+    slug: "gel-antibacterial",
+    name: "Gel Antibacterial",
+    description:
+      "Gel desinfectante para manos sin enjuague. Su fórmula con alcohol al 70% elimina eficazmente bacterias y algunos virus. Contiene emolientes que protegen la piel del resecamiento incluso con uso frecuente. Ideal para situaciones donde no se dispone de agua y jabón.",
+    shortDescription: "Gel desinfectante para manos sin enjuague.",
+    category: "sanitizantes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Desinfección sin agua ni jabón",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Secado rápido",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Con emolientes para proteger la piel",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "No pegajoso",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Fragancia agradable",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Desinfección de manos en movimiento",
+      },
+      {
+        id: 2,
+        aplication: "Uso en dispensadores",
+      },
+      {
+        id: 3,
+        aplication: "Áreas sin acceso a agua",
+      },
+      {
+        id: 4,
+        aplication: "Complemento de higiene de manos",
+      },
+    ],
+    coverImage: "/products/gel-antibacterial.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Shield,
+    stock: "disponible",
+    isNew: true,
+  },
+  {
+    id: 11,
+    slug: "repelente-aves",
+    name: "Repelente para Aves",
+    description:
+      "Gel repelente no tóxico que crea una superficie incómoda para las aves sin causarles daño. Su formulación resistente a la intemperie proporciona una protección duradera contra la percha y anidación de aves. Ideal para cornisas, letreros, equipos exteriores y otras áreas afectadas por aves urbanas.",
+    shortDescription:
+      "Gel repelente no tóxico que crea una superficie incómoda para las aves sin causarles daño.",
+    category: "repelentes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "No tóxico para aves",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Resistente a la intemperie",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Fácil aplicación",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Larga duración",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "No daña superficies",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Cornisas y salientes",
+      },
+      {
+        id: 2,
+        aplication: "Letreros y estructuras",
+      },
+      {
+        id: 3,
+        aplication: "Equipos exteriores",
+      },
+      {
+        id: 4,
+        aplication: "Áreas de anidación",
+      },
+    ],
+    coverImage: "/products/repelente-aves.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Bird,
+    stock: "disponible",
+  },
+  {
+    id: 12,
+    slug: "repelente-roedores",
+    name: "Repelente Ultrasónico para Roedores",
+    description:
+      "Dispositivo electrónico que emite ondas ultrasónicas variables que perturban y ahuyentan a roedores. Proporciona una solución no letal y ecológica para áreas donde no se desea usar rodenticidas. Ideal para hogares con niños y mascotas, o áreas sensibles donde los métodos químicos no son apropiados.",
+    shortDescription:
+      "Dispositivo electrónico que emite ondas ultrasónicas variables que perturban y ahuyentan a roedores.",
+    category: "repelentes",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "No utiliza productos químicos",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Seguro para niños y mascotas",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Bajo consumo energético",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Cobertura hasta 100 m²",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Frecuencia variable para evitar habituación",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Áreas residenciales",
+      },
+      {
+        id: 2,
+        aplication: "Espacios con alimentos",
+      },
+      {
+        id: 3,
+        aplication: "Complemento a programas de control",
+      },
+      {
+        id: 4,
+        aplication: "Áreas sensibles a químicos",
+      },
+    ],
+    coverImage: "/products/repelente-ultrasonico.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Zap,
+    stock: "disponible",
+  },
+  {
+    id: 13,
+    slug: "trampa-adhesiva-roedores",
+    name: "Trampa Adhesiva para Roedores",
+    description:
+      "Trampa con adhesivo de alta potencia para la captura de roedores. Su diseño plano y discreto permite colocarla en espacios estrechos donde los roedores transitan. Ideal para el monitoreo de actividad de roedores o como parte de un programa integrado de control en áreas donde no se desea usar rodenticidas.",
+    shortDescription:
+      "Trampa con adhesivo de alta potencia para la captura de roedores.",
+    category: "trampas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Adhesivo de alta potencia",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Diseño plano y discreto",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "No contiene venenos",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Atrayente incorporado",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Fácil de usar",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Monitoreo de actividad",
+      },
+      {
+        id: 2,
+        aplication: "Captura en áreas sensibles",
+      },
+      {
+        id: 3,
+        aplication: "Complemento a programas de control",
+      },
+      {
+        id: 4,
+        aplication: "Identificación de especies",
+      },
+    ],
+    coverImage: "/products/trampa-adhesiva.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Rat,
+    stock: "disponible",
+  },
+  {
+    id: 14,
+    slug: "trampa-luz-uv",
+    name: "Trampa de Luz UV para Insectos",
+    description:
+      "Dispositivo de captura de insectos voladores mediante luz ultravioleta y placa adhesiva. Su diseño elegante y discreto lo hace ideal para áreas comerciales y de atención al público. Proporciona un control efectivo y silencioso de moscas, mosquitos y otros insectos voladores sin productos químicos.",
+    shortDescription:
+      "Dispositivo de captura de insectos voladores mediante luz ultravioleta y placa adhesiva.",
+    category: "trampas",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Tubos UV de alta eficiencia",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Placa adhesiva de fácil reemplazo",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Diseño discreto y elegante",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Operación silenciosa",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Cobertura hasta 80 m²",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Restaurantes y cocinas",
+      },
+      {
+        id: 2,
+        aplication: "Áreas de procesamiento de alimentos",
+      },
+      {
+        id: 3,
+        aplication: "Oficinas y áreas comerciales",
+      },
+      {
+        id: 4,
+        aplication: "Hospitales y centros de salud",
+      },
+    ],
+    coverImage: "/products/trampa-luz-uv.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Bug,
+    stock: "disponible",
+    isFeatured: true,
+  },
+  {
+    id: 15,
+    slug: "nebulizador-ulv",
+    name: "Nebulizador ULV Eléctrico",
+    description:
+      "Equipo de nebulización de ultra bajo volumen (ULV) para la aplicación de insecticidas, desinfectantes y sanitizantes. Genera microgotas de 5-50 micras que permanecen suspendidas en el aire, alcanzando áreas de difícil acceso. Ideal para la desinfección de grandes espacios y el control de insectos voladores.",
+    shortDescription:
+      "Equipo de nebulización de ultra bajo volumen (ULV) para la aplicación de insecticidas y desinfectantes.",
+    category: "equipos",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Tamaño de gota ajustable (5-50 micras)",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Motor eléctrico de alta durabilidad",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Tanque de 5 litros",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Alcance hasta 8-10 metros",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Flujo ajustable",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Desinfección de grandes espacios",
+      },
+      {
+        id: 2,
+        aplication: "Control de insectos voladores",
+      },
+      {
+        id: 3,
+        aplication: "Aplicación de sanitizantes",
+      },
+      {
+        id: 4,
+        aplication: "Tratamientos de choque",
+      },
+    ],
+    coverImage: "/products/nebulizador-ulv.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: SprayCan,
+    stock: "disponible",
+    isFeatured: true,
+  },
+  {
+    id: 16,
+    slug: "pulverizador-manual",
+    name: "Pulverizador Manual de Presión Previa",
+    description:
+      "Equipo portátil para la aplicación de insecticidas, herbicidas y desinfectantes. Su sistema de presión previa permite una aplicación constante y controlada. Fabricado con materiales resistentes a productos químicos para una mayor durabilidad. Ideal para tratamientos localizados y de precisión.",
+    shortDescription:
+      "Equipo portátil para la aplicación de insecticidas, herbicidas y desinfectantes.",
+    category: "equipos",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Tanque de 5-8 litros",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Válvula de seguridad",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Boquilla ajustable",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Correa para transporte",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Resistente a productos químicos",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Tratamientos localizados",
+      },
+      {
+        id: 2,
+        aplication: "Aplicación en grietas y hendiduras",
+      },
+      {
+        id: 3,
+        aplication: "Tratamientos de perímetro",
+      },
+      {
+        id: 4,
+        aplication: "Desinfección de superficies",
+      },
+    ],
+    coverImage: "/products/pulverizador-manual.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: SprayCan,
+    stock: "disponible",
+  },
+  {
+    id: 17,
+    slug: "termonebulizador",
+    name: "Termonebulizador",
+    description:
+      "Equipo que genera niebla térmica para la aplicación de insecticidas y desinfectantes. Produce microgotas de 1-50 micras mediante calor, creando una densa niebla que penetra en áreas de difícil acceso. Ideal para tratamientos de choque en grandes espacios, control de mosquitos en exteriores y desinfección de áreas extensas.",
+    shortDescription:
+      "Equipo que genera niebla térmica para la aplicación de insecticidas y desinfectantes.",
+    category: "equipos",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Motor de combustión potente",
+        description: "",
+      },
+      {
+        id: 2,
+        title: "Tanque de solución de 5 litros",
+        description: "",
+      },
+      {
+        id: 3,
+        title: "Alcance hasta 30 metros",
+        description: "",
+      },
+      {
+        id: 4,
+        title: "Tamaño de gota 1-50 micras",
+        description: "",
+      },
+      {
+        id: 5,
+        title: "Portátil y de fácil manejo",
+        description: "",
+      },
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Control de mosquitos en exteriores",
+      },
+      {
+        id: 2,
+        aplication: "Tratamientos de choque",
+      },
+      {
+        id: 3,
+        aplication: "Desinfección de grandes espacios",
+      },
+      {
+        id: 4,
+        aplication: "Aplicación en áreas de difícil acceso",
+      },
+      "Control de mosquitos en exteriores",
+      "Tratamientos de choque",
+      "Desinfección de grandes espacios",
+      "Aplicación en áreas de difícil acceso",
+    ],
+    coverImage: "/products/termonebulizador.jpg",
+    gallery: [
+      {
+        id: 1,
+        url: "",
+      },
+    ],
+    icon: Flame,
+    stock: "disponible",
+  },
+];
+
+export const getProductById = (id: number): Product | undefined => {
+  return ProductosData.find((product) => product.id === id);
+};
+
+export const getProductBySlug = (slug: string): Product | undefined => {
+  return ProductosData.find((product) => product.slug === slug);
+};
+
+export const getProductsByCategory = (category: ProductCategory): Product[] => {
+  return ProductosData.filter((product) => product.category === category);
+};
+
+export const getAllProductCategories = (): {
+  key: ProductCategory;
+  label: string;
+}[] => {
+  return [
+    { key: "insecticidas", label: "Insecticidas" },
+    { key: "rodenticidas", label: "Rodenticidas" },
+    { key: "desinfectantes", label: "Desinfectantes" },
+    { key: "sanitizantes", label: "Sanitizantes" },
+    { key: "repelentes", label: "Repelentes" },
+    { key: "trampas", label: "Trampas" },
+    { key: "equipos", label: "Equipos" },
+  ];
+};
+
+export const getFeaturedProducts = (): Product[] => {
+  return ProductosData.filter((product) => product.isFeatured);
+};
+
+export const getNewProducts = (): Product[] => {
+  return ProductosData.filter((product) => product.isNew);
+};
+
+export const getAllProducts = (): Product[] => {
+  return ProductosData;
+};
+
+export const searchProducts = (query: string): Product[] => {
+  const searchTerm = query.toLowerCase();
+  return ProductosData.filter(
+    (product) =>
+      product.name.toLowerCase().includes(searchTerm) ||
+      product.description.toLowerCase().includes(searchTerm) ||
+      product.category.toLowerCase().includes(searchTerm)
+  );
 };

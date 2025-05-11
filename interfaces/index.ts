@@ -1,4 +1,10 @@
-import { IconProp, PositionProp, ServiceType } from "@/types/Props";
+import {
+  IconProp,
+  PositionProp,
+  ProductCategory,
+  ProductStock,
+  ServiceType,
+} from "@/types/Props";
 
 export interface BaseModel {
   id: number;
@@ -9,57 +15,79 @@ export interface IProcessDiagram extends BaseModel {
   title: string;
   icon: IconProp;
   description: string;
-  position: PositionProp
+  position: PositionProp;
 }
 
 export interface IFeatureERP extends BaseModel {
   title: string;
   description: string;
-  icon: IconProp
+  icon: IconProp;
 }
 
-export interface IVentajaNosotros extends BaseModel{
+export interface IVentajaNosotros extends BaseModel {
   title: string;
   description: string;
   delay: number;
   icon: IconProp;
 }
 
-export interface ServiceFeature extends BaseModel {
+export interface FeatureType extends BaseModel {
   title: string;
   description: string;
 }
 
-export interface ServiceProcess extends BaseModel{
+export interface ProcessType extends BaseModel {
   title: string;
   description: string;
 }
 
-export interface ServiceBenefits extends BaseModel {
+export interface BenefitsType extends BaseModel {
   title: string;
 }
 
-export interface ServiceGallery extends BaseModel{
+export interface GalleryType extends BaseModel {
   url: string;
 }
 
-export interface ServiceFaqs extends BaseModel{
+export interface FaqsType extends BaseModel {
   question: string;
-  answer: string
+  answer: string;
+}
+
+export interface ApplicationsType extends BaseModel {
+  aplication: string;
 }
 
 export interface Service extends BaseModel {
-  title:string;
-  slug: string
+  title: string;
+  slug: string;
   shortDescription: string;
   fullDescription: string;
   category: ServiceType;
   icon: IconProp;
-  features: ServiceFeature[]
-  process: ServiceProcess[]
-  benefits: ServiceBenefits[]
+  features: FeatureType[];
+  process: ProcessType[];
+  benefits: BenefitsType[];
   coverImage: string;
-  galleryImages: ServiceGallery[]
-  faqs: ServiceFaqs[]
-  delay: number
+  galleryImages: GalleryType[];
+  faqs: FaqsType[];
+  delay: number;
+}
+
+export interface Product extends BaseModel {
+  name: string;
+  slug: string;
+  description: string;
+  shortDescription: string;
+  category: ProductCategory;
+  price?: string;
+  features: FeatureType[];
+  applications: ApplicationsType[];
+  coverImage: string;
+  gallery: GalleryType[];
+  icon: IconProp;
+  stock: ProductStock;
+  isNew?: boolean;
+  isFeatured?: boolean;
+  technicalSheet?: string;
 }

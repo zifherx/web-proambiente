@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 import { HeroSection } from "./HeroSection";
 import { SearchToolbarSection } from "./SearchToolbarSection";
+import { SearchResultsSection } from "./SearchResultsSection";
 
 export function CatalogoView() {
   const router = useRouter();
@@ -24,10 +25,11 @@ export function CatalogoView() {
     <>
       <HeroSection />
       <SearchToolbarSection
-        gestorBusqueda={handleSearch}
-        parametroBusqueda={searchTerm}
-        setParametroBusqueda={setSearchTerm}
+        handleSearch={handleSearch}
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
       />
+      <SearchResultsSection />
     </>
   );
 }

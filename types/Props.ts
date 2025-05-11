@@ -7,13 +7,13 @@ import {
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 import {
+  BenefitsType,
+  FeatureType,
   IFeatureERP,
   IProcessDiagram,
   IVentajaNosotros,
+  ProcessType,
   Service,
-  ServiceBenefits,
-  ServiceFeature,
-  ServiceProcess,
 } from "@/interfaces";
 
 export type SocialButtonProp = {
@@ -114,22 +114,26 @@ export type ServiceList = {
 };
 
 export type ServiceProcessProp = {
-  process: ServiceProcess[];
+  process: ProcessType[];
 };
 
 export type BenefitsServiceProp = {
-  benefits: ServiceBenefits[];
+  benefits: BenefitsType[];
 };
 
 export type FeaturesServiceProp = {
-  features: ServiceFeature[];
+  features: FeatureType[];
 };
 
 export type SearchToolbarProp = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  gestorBusqueda: (e: any) => void;
-  parametroBusqueda: string;
-  setParametroBusqueda: Dispatch<SetStateAction<string>>;
+  handleSearch: (e: any) => void;
+  searchTerm: string;
+  setSearchTerm: Dispatch<SetStateAction<string>>;
+};
+
+export type SearchResultsProp = {
+  searchTerm: string;
 };
 
 export type VariantButton =
@@ -139,6 +143,17 @@ export type VariantButton =
   | "link"
   | "outline"
   | "secondary";
+
+export type ProductCategory =
+  | "insecticidas"
+  | "rodenticidas"
+  | "desinfectantes"
+  | "sanitizantes"
+  | "repelentes"
+  | "trampas"
+  | "equipos";
+
+export type ProductStock = "disponible" | "bajo" | "agotado";
 
 export type ServiceType = "saneamiento" | "auxiliares";
 
