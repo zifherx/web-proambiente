@@ -1,13 +1,22 @@
-import { HTMLAttributeAnchorTarget, ReactNode } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import {
+  Dispatch,
+  HTMLAttributeAnchorTarget,
+  ReactNode,
+  SetStateAction,
+} from "react";
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 import {
+  BenefitsType,
+  FeatureType,
   IFeatureERP,
   IProcessDiagram,
   IVentajaNosotros,
+  ProcessType,
+  Product,
+  ProductCategories,
   Service,
-  ServiceBenefits,
-  ServiceFeature,
 } from "@/interfaces";
 
 export type SocialButtonProp = {
@@ -32,7 +41,7 @@ export type VentajasERPProp = {
   features: IFeatureERP[];
 };
 
-export type VentajasNosotrosProp = Partial<IVentajaNosotros>;
+export type VentajasNosotrosProp = IVentajaNosotros;
 
 export type RevealProp = {
   children: ReactNode;
@@ -99,17 +108,58 @@ export type HeroServiceProp = ServiceCard & {
   icon: IconProp;
 };
 
+export type HeroProductProp = ProductCardProp & {
+  icon: IconProp;
+};
+
 export type ServiceCard = {
   service: Service;
 };
 
+export type ServiceList = {
+  services: Service[];
+};
+
+export type ServiceProcessProp = {
+  process: ProcessType[];
+};
+
 export type BenefitsServiceProp = {
-  benefits: ServiceBenefits[];
+  benefits: BenefitsType[];
 };
 
 export type FeaturesServiceProp = {
-  features: ServiceFeature[];
+  features: FeatureType[];
 };
+
+export type SearchToolbarProp = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  handleSearch: (e: any) => void;
+  searchTerm: string;
+  setSearchTerm: Dispatch<SetStateAction<string>>;
+};
+
+export type SearchResultsProp = {
+  searchTerm: string;
+  filteredProducts: Product[];
+  clearSearch: () => void;
+};
+
+export type ProductCategoriesProp = {
+  categories: ProductCategories[];
+  activeCategory: ProductCategory;
+  handleCategoryChange: (value: any) => void;
+};
+
+export type ProductCardProp = {
+  index: number;
+  product: Product;
+};
+
+export type SearchSectionProp = SearchResultsProp &
+  ProductCategoriesProp & {
+    isSearching: boolean;
+  };
 
 export type VariantButton =
   | "default"
@@ -118,6 +168,17 @@ export type VariantButton =
   | "link"
   | "outline"
   | "secondary";
+
+export type ProductCategory =
+  | "insecticidas"
+  | "rodenticidas"
+  | "desinfectantes"
+  | "sanitizantes"
+  | "repelentes"
+  | "trampas"
+  | "equipos";
+
+export type ProductStock = "disponible" | "bajo" | "agotado";
 
 export type ServiceType = "saneamiento" | "auxiliares";
 
