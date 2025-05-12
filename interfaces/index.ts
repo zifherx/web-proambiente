@@ -91,3 +91,21 @@ export interface Product extends BaseModel {
   isFeatured?: boolean;
   technicalSheet?: string;
 }
+
+export interface ServiceCategories {
+  key: ServiceType;
+  label: string;
+}
+
+export interface ProductCategories {
+  key: ProductCategory;
+  label: string;
+}
+
+export interface ProductBenefit {
+  id: number;
+  delay: number;
+  icon: IconProp;
+  beneficio: string;
+  description: string;
+}

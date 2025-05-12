@@ -2,7 +2,15 @@
 
 import { Button } from "@/components/ui/button";
 
-export function SearchResults() {
+import { ProductCard } from "@/components/shared/ProductCard";
+
+import { SearchResultsProp } from "@/types/Props";
+
+export function SearchResults({
+  clearSearch,
+  filteredProducts,
+  searchTerm,
+}: SearchResultsProp) {
   return (
     <div>
       <div className="mb-6 flex items-center justify-between">
@@ -15,9 +23,9 @@ export function SearchResults() {
       </div>
 
       {filteredProducts.length > 0 ? (
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {filteredProducts.map((product, index) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} index={index} product={product} />
           ))}
         </div>
       ) : (

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Dispatch,
   HTMLAttributeAnchorTarget,
@@ -13,6 +14,8 @@ import {
   IProcessDiagram,
   IVentajaNosotros,
   ProcessType,
+  Product,
+  ProductCategories,
   Service,
 } from "@/interfaces";
 
@@ -105,6 +108,10 @@ export type HeroServiceProp = ServiceCard & {
   icon: IconProp;
 };
 
+export type HeroProductProp = ProductCardProp & {
+  icon: IconProp;
+};
+
 export type ServiceCard = {
   service: Service;
 };
@@ -134,7 +141,25 @@ export type SearchToolbarProp = {
 
 export type SearchResultsProp = {
   searchTerm: string;
+  filteredProducts: Product[];
+  clearSearch: () => void;
 };
+
+export type ProductCategoriesProp = {
+  categories: ProductCategories[];
+  activeCategory: ProductCategory;
+  handleCategoryChange: (value: any) => void;
+};
+
+export type ProductCardProp = {
+  index: number;
+  product: Product;
+};
+
+export type SearchSectionProp = SearchResultsProp &
+  ProductCategoriesProp & {
+    isSearching: boolean;
+  };
 
 export type VariantButton =
   | "default"

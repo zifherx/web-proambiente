@@ -3,7 +3,10 @@ import {
   IProcessDiagram,
   IVentajaNosotros,
   Product,
+  ProductBenefit,
+  ProductCategories,
   Service,
+  ServiceCategories,
 } from "@/interfaces";
 import {
   ClientesProp,
@@ -16,6 +19,7 @@ import {
 } from "@/types/Props";
 import {
   Award,
+  BadgeCheck,
   BarChart3,
   Bed,
   Bird,
@@ -29,8 +33,10 @@ import {
   FileText,
   Flame,
   Instagram,
+  Leaf,
   Lightbulb,
   Linkedin,
+  Microscope,
   Pipette,
   Rat,
   Shield,
@@ -2065,10 +2071,7 @@ export const getServicesByCategory = (category: ServiceType): Service[] => {
   return ServiciosData.filter((service) => service.category === category);
 };
 
-export const getAllServiceCategories = (): {
-  key: ServiceType;
-  label: string;
-}[] => {
+export const getAllServiceCategories = (): ServiceCategories[] => {
   return [
     { key: "saneamiento", label: "Saneamiento Ambiental" },
     { key: "auxiliares", label: "Servicios Auxiliares" },
@@ -3207,10 +3210,7 @@ export const getProductsByCategory = (category: ProductCategory): Product[] => {
   return ProductosData.filter((product) => product.category === category);
 };
 
-export const getAllProductCategories = (): {
-  key: ProductCategory;
-  label: string;
-}[] => {
+export const getAllProductCategories = (): ProductCategories[] => {
   return [
     { key: "insecticidas", label: "Insecticidas" },
     { key: "rodenticidas", label: "Rodenticidas" },
@@ -3243,3 +3243,38 @@ export const searchProducts = (query: string): Product[] => {
       product.category.toLowerCase().includes(searchTerm)
   );
 };
+
+export const BeneficiosProductosData: ProductBenefit[] = [
+  {
+    id: 1,
+    delay: 0.1,
+    icon: BadgeCheck,
+    beneficio: "Calidad Certificada",
+    description:
+      "Todos nuestros productos cumplen con los más altos estándares de calidad y están certificados por las autoridades competentes.",
+  },
+  {
+    id: 2,
+    delay: 0.2,
+    icon: Leaf,
+    beneficio: "Compromiso Ambiental",
+    description:
+      "Seleccionamos productos que minimizan el impacto ambiental sin comprometer la eficacia en el control de plagas y desinfección.",
+  },
+  {
+    id: 3,
+    delay: 0.3,
+    icon: Microscope,
+    beneficio: "Respaldo Técnico",
+    description:
+      "Nuestro equipo de profesionales brinda asesoría técnica para garantizar el uso correcto y seguro de todos nuestros productos.",
+  },
+  {
+    id: 4,
+    delay: 0.4,
+    icon: Zap,
+    beneficio: "Eficacia Comprobada",
+    description:
+      "Seleccionamos cuidadosamente cada producto para garantizar resultados óptimos en el control de plagas y saneamiento ambiental.",
+  },
+];
