@@ -3180,11 +3180,7 @@ export const ProductosData: Product[] = [
       {
         id: 4,
         aplication: "Aplicación en áreas de difícil acceso",
-      },
-      "Control de mosquitos en exteriores",
-      "Tratamientos de choque",
-      "Desinfección de grandes espacios",
-      "Aplicación en áreas de difícil acceso",
+      }
     ],
     coverImage: "/products/termonebulizador.jpg",
     gallery: [
