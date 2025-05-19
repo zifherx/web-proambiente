@@ -170,13 +170,9 @@ export type VariantButton =
   | "secondary";
 
 export type ProductCategory =
-  | "insecticidas"
-  | "rodenticidas"
-  | "desinfectantes"
-  | "sanitizantes"
-  | "repelentes"
   | "trampas"
-  | "equipos";
+  | "equipos"
+  | "insumos";
 
 export type ProductStock = "disponible" | "bajo" | "agotado";
 

@@ -16,13 +16,13 @@ export default function ProductCategories({
 }: ProductCategoriesProp) {
   return (
     <Tabs
-      defaultValue="insecticidas"
+      defaultValue="trampas"
       value={activeCategory}
       onValueChange={(value) => handleCategoryChange(value)}
       className="w-full"
     >
       <div className="mb-8 flex justify-center">
-        <TabsList className="grid w-full max-w-4xl grid-cols-2 md:grid-cols-7">
+        <TabsList className="grid w-full max-w-4xl grid-cols-2 md:grid-cols-3">
           {categories.map(({ key, label }) => (
             <TabsTrigger
               key={key}
