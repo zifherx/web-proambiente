@@ -60,16 +60,8 @@ export function ProductCard({ index, product }: ProductCardProp) {
               variant="outline"
               className="bg-blueAmbiente/10 text-xs font-medium text-blueAmbiente"
             >
-              {product.category === "insecticidas"
-                ? "Insecticida"
-                : product.category === "rodenticidas"
-                ? "Rodenticida"
-                : product.category === "desinfectantes"
-                ? "Desinfectante"
-                : product.category === "sanitizantes"
-                ? "Sanitizante"
-                : product.category === "repelentes"
-                ? "Repelente"
+              {product.category === "insumos"
+                ? "Insumos"
                 : product.category === "trampas"
                 ? "Trampa"
                 : "Equipo"}
