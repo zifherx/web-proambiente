@@ -2,12 +2,12 @@
 
 import { useState } from "react"
 import Link from "next/link";
+import Image from "next/image";
 import {motion, scale} from 'framer-motion'
 
 import { FadeInWhenVisible } from "./FadeInWhenVisible";
 
 import { ServicioCardProp } from "@/types/Props"
-import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
 export function ServiceCard({index, service}: ServicioCardProp) {
@@ -25,8 +25,8 @@ export function ServiceCard({index, service}: ServicioCardProp) {
             >
                 <div className="relative h-48 overflow-hidden">
                     <Image
-                        src={service.coverImage || 'https://placehold.co/400'}
-                        alt={service.title}
+                        src={`/images/services/${service.slug}/${service.coverImage}`}
+                        alt={`${service.title}-${index}`}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />

@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Product } from "@/interfaces";
-import { createWhatsAppLink } from "@/lib/global";
+import { createWhatsAppLinkForProduct } from "@/lib/global";
 import { Phone, ShoppingCart } from "lucide-react";
 
 export function ProductCTA({ product }: { product: Product }) {
@@ -22,7 +22,7 @@ export function ProductCTA({ product }: { product: Product }) {
         <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
           <Button size="lg" variant="secondary" asChild>
             <a
-              href={createWhatsAppLink(product.name)}
+              href={createWhatsAppLinkForProduct(product.name)}
               target="_blank"
               rel="noopener noreferrer"
             >

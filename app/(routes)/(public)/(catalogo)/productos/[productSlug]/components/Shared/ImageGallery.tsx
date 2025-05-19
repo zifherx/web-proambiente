@@ -21,7 +21,7 @@ export function ImageGallery({ gallery, slug, name }: Partial<Product>) {
             className="h-full w-full"
           >
             <Image
-              src={`/images/products/${gallery![selectedImage]}`}
+              src={`/images/products/${gallery![selectedImage].url}`}
               alt={`${name} - Imagen ${selectedImage}`}
               fill
               className="object-contain"
@@ -41,7 +41,7 @@ export function ImageGallery({ gallery, slug, name }: Partial<Product>) {
             }`}
           >
             <Image
-              src={url}
+              src={`/images/products/${url}`}
               alt={`Miniatura ${id}`}
               fill
               className="object-cover"

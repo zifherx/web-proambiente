@@ -490,6 +490,7 @@ export const ServiciosData: Service[] = [
     id: 1,
     slug: "desratizacion",
     title: "Desratización",
+    isActive: true,
     shortDescription: "Control y eliminació de roedores",
     fullDescription:
       "Nuestro servicio de desratización está diseñado para eliminar de manera efectiva y segura las infestaciones de roedores en hogares, empresas e industrias. Utilizamos métodos avanzados y productos certificados que garantizan resultados duraderos sin comprometer la seguridad de las personas, mascotas o el medio ambiente.",
@@ -575,11 +576,27 @@ export const ServiciosData: Service[] = [
         title: "Ambiente más saludable y seguro",
       },
     ],
-    coverImage: "",
+    coverImage: "desratizacion-2.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "desratizacion-1.jpg",
+      },
+      {
+        id: 2,
+        url: "desratizacion-2.jpg",
+      },
+      {
+        id: 3,
+        url: "desratizacion-3.jpeg",
+      },
+      {
+        id: 4,
+        url: "desratizacion-4.jpeg",
+      },
+      {
+        id: 5,
+        url: "desratizacion-5.jpeg",
       },
     ],
     faqs: [
@@ -609,6 +626,7 @@ export const ServiciosData: Service[] = [
     id: 2,
     slug: "desinsectacion",
     title: "Desinsectación",
+    isActive: true,
     shortDescription: "Control y eliminación de insectos",
     fullDescription:
       "Nuestro servicio de desinsectación combate eficazmente todo tipo de insectos plaga como cucarachas, hormigas, moscas, mosquitos, pulgas y otros. Utilizamos técnicas avanzadas y productos biodegradables que eliminan las plagas existentes y previenen futuras infestaciones, garantizando espacios libres de insectos.",
@@ -694,11 +712,39 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas sanitarias",
       },
     ],
-    coverImage: "/service-2.jpg",
+    coverImage: "desinsectacion-2.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "desinsectacion-2.jpeg",
+      },
+      {
+        id: 2,
+        url: "desinsectacion-3.jpeg",
+      },
+      {
+        id: 3,
+        url: "desinsectacion-11.jpeg",
+      },
+      {
+        id: 4,
+        url: "desinsectacion-5.jpeg",
+      },
+      {
+        id: 5,
+        url: "desinsectacion-6.jpeg",
+      },
+      {
+        id: 6,
+        url: "desinsectacion-7.jpeg",
+      },
+      {
+        id: 7,
+        url: "desinsectacion-12.jpeg",
+      },
+      {
+        id: 8,
+        url: "desinsectacion-10.jpeg",
       },
     ],
     faqs: [
@@ -727,6 +773,7 @@ export const ServiciosData: Service[] = [
     id: 3,
     slug: "desinfeccion",
     title: "Desinfección",
+    isActive: true,
     shortDescription: "Eliminación de microorganismos",
     fullDescription:
       "Nuestro servicio de desinfección elimina virus, bacterias, hongos y otros microorganismos patógenos de superficies y ambientes. Utilizamos desinfectantes de amplio espectro y equipos de última generación para garantizar la higienización completa de espacios residenciales, comerciales e industriales, creando entornos más saludables y seguros.",
@@ -812,12 +859,40 @@ export const ServiciosData: Service[] = [
         title: "Mayor seguridad para ocupantes y visitantes",
       },
     ],
-    coverImage: "/service-3.jpg",
+    coverImage: "desinfeccion-1.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "desinfeccion-1.jpg",
       },
+      {
+        id: 2,
+        url: "desinfeccion-2.jpg",
+      },
+      {
+        id: 3,
+        url: "desinfeccion-3.jpg",
+      },
+      {
+        id: 4,
+        url: "desinfeccion-4.jpg",
+      },
+      {
+        id: 5,
+        url: "desinfeccion-5.jpg",
+      },
+      {
+        id: 6,
+        url: "desinfeccion-6.jpg",
+      },
+      {
+        id: 7,
+        url: "desinfeccion-7.jpg",
+      },
+      {
+        id: 8,
+        url: "desinfeccion-8.jpg",
+      }
     ],
     faqs: [
       {
@@ -846,6 +921,7 @@ export const ServiciosData: Service[] = [
     id: 4,
     slug: "limpieza-oficinas",
     title: "Limpieza de Oficinas",
+    isActive: true,
     shortDescription: "Servicio profesional para empresas",
     fullDescription:
       "Ofrecemos un servicio integral de limpieza y mantenimiento para oficinas y espacios de trabajo. Nuestro equipo profesional se encarga de mantener impecables todas las áreas, desde escritorios y salas de reuniones hasta baños y áreas comunes, utilizando productos y técnicas que garantizan un ambiente laboral limpio, ordenado y saludable.",
@@ -931,11 +1007,19 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas de higiene y seguridad laboral",
       },
     ],
-    coverImage: "/limpieza-1.jpg",
+    coverImage: "limpieza-oficinas-3.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-oficinas-1.jpeg",
+      },
+      {
+        id: 2,
+        url: "limpieza-oficinas-2.jpeg",
+      },
+      {
+        id: 3,
+        url: "limpieza-oficinas-3.jpeg",
       },
     ],
     faqs: [
@@ -964,6 +1048,7 @@ export const ServiciosData: Service[] = [
     id: 5,
     slug: "limpieza-fachadas",
     title: "Limpieza de Fachadas",
+    isActive: true,
     shortDescription: "Restauración de imagen exterior",
     fullDescription:
       "Nuestro servicio especializado de limpieza de fachadas devuelve el aspecto original a los exteriores de edificios y negocios. Eliminamos suciedad, polvo, contaminación, grafitis y manchas utilizando técnicas específicas para cada tipo de superficie, ya sea vidrio, concreto, ladrillo, metal o piedra, mejorando significativamente la apariencia e imagen de su propiedad.",
@@ -1049,39 +1134,47 @@ export const ServiciosData: Service[] = [
         title: "Mayor durabilidad de la fachada",
       },
     ],
-    coverImage: "limpieza-fachada-2.jpeg",
+    coverImage: "limpieza-fachadas-12.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "limpieza-fachada-1.jpeg",
+        url: "limpieza-fachadas-1.jpeg",
       },
       {
         id: 2,
-        url: "limpieza-fachada-3.jpeg",
+        url: "limpieza-fachadas-3.jpeg",
       },
       {
         id: 3,
-        url: "limpieza-fachada-4.jpeg",
+        url: "limpieza-fachadas-4.jpeg",
       },
       {
         id: 4,
-        url: "limpieza-fachada-5.jpeg",
+        url: "limpieza-fachadas-5.jpeg",
       },
       {
         id: 5,
-        url: "limpieza-fachada-6.jpeg",
+        url: "limpieza-fachadas-6.jpeg",
       },
       {
         id: 6,
-        url: "limpieza-fachada-7.jpeg",
+        url: "limpieza-fachadas-7.jpeg",
       },
       {
         id: 7,
-        url: "limpieza-fachada-8.jpeg",
+        url: "limpieza-fachadas-8.jpeg",
       },
       {
         id: 8,
-        url: "limpieza-fachada-9.jpeg",
+        url: "limpieza-fachadas-9.jpeg",
+      },
+      {
+        id: 9,
+        url: "limpieza-fachadas-10.jpeg",
+      },
+      {
+        id: 10,
+        url: "limpieza-fachadas-11.jpeg",
       },
     ],
     faqs: [
@@ -1110,6 +1203,7 @@ export const ServiciosData: Service[] = [
     id: 6,
     slug: "limpieza-tanques",
     title: "Limpieza de Tanques",
+    isActive: true,
     shortDescription: "Mantenimiento de cisternas y reservorios",
     fullDescription:
       "Nuestro servicio de limpieza y desinfección de tanques de agua garantiza que su suministro de agua se mantenga limpio y seguro. Eliminamos sedimentos, algas, bacterias y otros contaminantes que pueden acumularse en cisternas y reservorios, cumpliendo con todas las normativas sanitarias vigentes y proporcionando certificados de limpieza.",
@@ -1195,11 +1289,51 @@ export const ServiciosData: Service[] = [
         title: "Mayor vida útil del tanque y sistemas de distribución",
       },
     ],
-    coverImage: "/limpieza-3.jpg",
+    coverImage: "limpieza-tanques-1.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-tanques-2.jpg",
+      },
+      {
+        id: 2,
+        url: "limpieza-tanques-3.jpg",
+      },
+      {
+        id: 3,
+        url: "limpieza-tanques-4.jpg",
+      },
+      {
+        id: 4,
+        url: "limpieza-tanques-5.jpg",
+      },
+      {
+        id: 5,
+        url: "limpieza-tanques-6.jpg",
+      },
+      {
+        id: 6,
+        url: "limpieza-tanques-7.jpg",
+      },
+      {
+        id: 7,
+        url: "limpieza-tanques-8.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-tanques-9.jpeg",
+      },
+      {
+        id: 9,
+        url: "limpieza-tanques-10.jpeg",
+      },
+      {
+        id: 10,
+        url: "limpieza-tanques-11.jpeg",
+      },
+      {
+        id: 11,
+        url: "limpieza-tanques-12.jpeg",
       },
     ],
     faqs: [
@@ -1230,6 +1364,7 @@ export const ServiciosData: Service[] = [
     id: 7,
     slug: "control-aviar",
     title: "Control Aviar",
+    isActive: true,
     shortDescription: "Soluciones para el control de aves",
     fullDescription:
       "Ofrecemos soluciones efectivas y humanitarias para el control de aves en edificios y estructuras. Implementamos sistemas que impiden la anidación y percha de aves sin causarles daño, protegiendo su propiedad de los problemas asociados con la presencia de aves como palomas, gaviotas y otras especies urbanas.",
@@ -1314,12 +1449,20 @@ export const ServiciosData: Service[] = [
         title: "Reducción de costos de limpieza y mantenimiento",
       },
     ],
-    coverImage: "/auxiliar-1.jpg",
+    coverImage: "control-aviar-1.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "control-aviar-2.jpg",
       },
+      {
+        id: 2,
+        url: "control-aviar-3.jpg",
+      },
+      {
+        id: 3,
+        url: "control-aviar-4.jpg",
+      }
     ],
     faqs: [
       {
@@ -1348,6 +1491,7 @@ export const ServiciosData: Service[] = [
     id: 8,
     slug: "lamparas-insectocutoras",
     title: "Lámparas Insectocutoras",
+    isActive: false,
     shortDescription: "Control de insectos voladores",
     fullDescription:
       "Instalamos y mantenemos lámparas insectocutoras de alta eficiencia para el control de insectos voladores en interiores. Estos dispositivos atraen y eliminan moscas, mosquitos, polillas y otros insectos voladores de manera higiénica y discreta, siendo ideales para restaurantes, cocinas industriales, áreas de procesamiento de alimentos y otros espacios donde la presencia de insectos es inaceptable.",
@@ -1467,6 +1611,7 @@ export const ServiciosData: Service[] = [
     id: 9,
     slug: "limpieza-campanas",
     title: "Limpieza de Campanas",
+    isActive: true,
     shortDescription: "Mantenimiento de campanas extractoras",
     fullDescription:
       "Nuestro servicio especializado de limpieza de campanas extractoras y sistemas de ventilación elimina la acumulación de grasa y residuos en cocinas comerciales e industriales. Este mantenimiento es crucial para prevenir incendios, mejorar la eficiencia de los equipos, cumplir con normativas de seguridad y mantener un ambiente de trabajo saludable.",
@@ -1552,11 +1697,15 @@ export const ServiciosData: Service[] = [
         title: "Mayor vida útil de los equipos de ventilación",
       },
     ],
-    coverImage: "/auxiliar-3.jpg",
+    coverImage: "limpieza-campanas-2.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-campanas-1.jpg",
+      },
+      {
+        id: 2,
+        url: "limpieza-campanas-2.jpg",
       },
     ],
     faqs: [
@@ -1586,6 +1735,7 @@ export const ServiciosData: Service[] = [
     id: 10,
     slug: "limpieza-pozos-septicos",
     title: "Limpieza de Pozos Sépticos",
+    isActive: true,
     shortDescription: "Mantenimiento preventivo y correctivo",
     fullDescription:
       "Ofrecemos un servicio completo de limpieza, mantenimiento y desatoro de pozos sépticos, cajas de registro y sistemas de drenaje. Utilizamos equipos de succión al vacío y técnicas especializadas para eliminar lodos, sedimentos y obstrucciones, previniendo desbordamientos, malos olores y problemas sanitarios.",
@@ -1671,11 +1821,15 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas de saneamiento",
       },
     ],
-    coverImage: "/adicional-1.jpg",
+    coverImage: "limpieza-pozos-septicos-2.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-pozos-septicos-1.jpeg",
+      },
+      {
+        id: 2,
+        url: "limpieza-pozos-septicos-2.jpeg",
       },
     ],
     faqs: [
@@ -1705,6 +1859,7 @@ export const ServiciosData: Service[] = [
     id: 11,
     slug: "limpieza-trampas-grasa",
     title: "Limpieza de Trampas de Grasa",
+    isActive: true,
     shortDescription: "Mantenimiento para restaurantes y cocinas",
     fullDescription:
       "Nuestro servicio especializado de limpieza de trampas de grasa previene obstrucciones en sistemas de drenaje de restaurantes y cocinas industriales. Removemos la acumulación de grasas, aceites y sólidos que pueden causar bloqueos, malos olores y problemas con las autoridades sanitarias, ayudando a mantener sus instalaciones funcionando correctamente.",
@@ -1789,11 +1944,19 @@ export const ServiciosData: Service[] = [
         title: "Prolongación de la vida útil del sistema de drenaje",
       },
     ],
-    coverImage: "/adicional-2.jpg",
+    coverImage: "limpieza-trampas-grasa-3.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-trampas-grasa-1.jpeg",
+      },
+      {
+        id: 2,
+        url: "limpieza-trampas-grasa-2.jpeg",
+      },
+      {
+        id: 3,
+        url: "limpieza-trampas-grasa-3.jpeg",
       },
     ],
     faqs: [
@@ -1823,6 +1986,7 @@ export const ServiciosData: Service[] = [
     id: 12,
     slug: "limpieza-colchones",
     title: "Limpieza de Colchones",
+    isActive: false,
     shortDescription: "Eliminación de ácaros y alérgenos",
     fullDescription:
       "Nuestro servicio profesional de limpieza y desinfección de colchones elimina ácaros, bacterias, hongos y alérgenos que se acumulan con el tiempo. Utilizamos equipos de aspiración profunda, vapor seco y tratamientos anti-ácaros para proporcionar un ambiente de descanso más limpio y saludable, especialmente beneficioso para personas con alergias o problemas respiratorios.",
@@ -1942,6 +2106,7 @@ export const ServiciosData: Service[] = [
     id: 13,
     slug: "limpieza-sumideros",
     title: "Limpieza de Red de Sumideros",
+    isActive: true,
     shortDescription: "Prevención de inundaciones y problemas de drenaje",
     fullDescription:
       "Nuestro servicio especializado de limpieza y mantenimiento de redes de sumideros y sistemas de drenaje pluvial previene inundaciones y problemas de acumulación de agua. Eliminamos sedimentos, residuos y obstrucciones que pueden bloquear el flujo normal del agua, garantizando el funcionamiento óptimo del sistema de drenaje en épocas de lluvia.",
@@ -2026,11 +2191,19 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas municipales",
       },
     ],
-    coverImage: "/adicional-3.jpg",
+    coverImage: "limpieza-sumideros-1.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-sumideros-1.jpeg",
+      },
+      {
+        id: 2,
+        url: "limpieza-sumideros-2.jpeg",
+      },
+      {
+        id: 3,
+        url: "limpieza-sumideros-3.jpeg",
       },
     ],
     faqs: [
@@ -2064,11 +2237,11 @@ export const getServiceById = (id: number): Service | undefined => {
 };
 
 export const getServiceBySlug = (slug: string): Service | undefined => {
-  return ServiciosData.find((service) => service.slug === slug);
+  return ServiciosData.find((service) => service.slug === slug && service.isActive);
 };
 
 export const getServicesByCategory = (category: ServiceType): Service[] => {
-  return ServiciosData.filter((service) => service.category === category);
+  return ServiciosData.filter((service) => service.category === category && service.isActive);
 };
 
 export const getAllServiceCategories = (): ServiceCategories[] => {
@@ -2079,18 +2252,18 @@ export const getAllServiceCategories = (): ServiceCategories[] => {
 };
 
 export const getAllServices = (): Service[] => {
-  return ServiciosData;
+  return ServiciosData.filter((servicio) => servicio.isActive);
 };
 
 export const ProductosData: Product[] = [
   {
     id: 1,
-    slug: "deltametrina-25-ec",
-    name: "Deltametrina 25 EC",
+    slug: "portacebo-roek-101",
+    name: "Portacebo Roek 101",
     description:
-      "Insecticida piretroide de amplio espectro con efecto de derribe y residualidad. Efectivo contra una amplia gama de insectos voladores y rastreros. Ideal para el control de moscas, mosquitos, cucarachas, hormigas y otros insectos en ambientes domésticos, comerciales e industriales.",
+      "Fabricado en polipropileno con protección U.V. posee 3 compartimientos independientes para Cebo en bloque, pellets y contiene una trampa de captura guillotina. De plástico duro accesible para los ratones, evita peligros a niños y animales domésticos y protege el cebo. Cierre, con llave.",
     shortDescription:
-      "Insecticida piretroide de amplio espectro con efecto de derribe y residualidad.",
+      "Fabricado en polipropileno con protección U.V. posee 3 compartimientos independientes para Cebo en bloque, pellets y contiene una trampa de captura guillotina.",
     category: "insecticidas",
     price: "Consultar",
     features: [
@@ -2138,11 +2311,11 @@ export const ProductosData: Product[] = [
         aplication: "Aplicación en grietas y hendiduras",
       },
     ],
-    coverImage: "/products/deltametrina.jpg",
+    coverImage: "portacebo-roek-101.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "portacebo-roek-101.jpg",
       },
     ],
     icon: Bug,
