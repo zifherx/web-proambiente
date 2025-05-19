@@ -26,6 +26,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import { createWhatsAppLinkForContact } from "@/lib/global";
+
 export function FormularioSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -42,7 +44,14 @@ export function FormularioSection() {
 
   const onSubmit = (values: ContactFormValues) => {
     setIsSubmitting(true);
-    console.log(values);
+    // console.log(values);
+    createWhatsAppLinkForContact({
+      cliente: values.nombre,
+      correo: values.email,
+      celular: values.telefono,
+      servicio: values.servicio,
+      mensaje: values.mensaje,
+    })
 
     setTimeout(() => {
       form.reset();

@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ImageGallery } from "./Shared/ImageGallery";
 
-import { createWhatsAppLink } from "@/lib/global";
+import { createWhatsAppLinkForProduct } from "@/lib/global";
 import { HeroProductProp } from "@/types/Props";
 
 export function HeroSection({ product, icon: Icon }: HeroProductProp) {
@@ -117,7 +117,7 @@ export function HeroSection({ product, icon: Icon }: HeroProductProp) {
               <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <Button size="lg" asChild>
                   <a
-                    href={createWhatsAppLink(product.name)}
+                    href={createWhatsAppLinkForProduct(product.name)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
