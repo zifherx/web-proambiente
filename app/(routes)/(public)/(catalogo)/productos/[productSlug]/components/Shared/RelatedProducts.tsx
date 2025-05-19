@@ -22,8 +22,8 @@ export function RelatedProducts({products, currentProductId} : { products: Produ
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src={coverImage}
-                  alt={name}
+                  src={`/images/products/${coverImage}`}
+                  alt={`${name} - ${id}`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
