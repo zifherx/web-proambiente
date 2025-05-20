@@ -73,7 +73,7 @@ export function HeroSection({ icon: Icon, service }: HeroServiceProp) {
                 alt={service.title}
                 width={600}
                 height={400}
-                className="h-auto w-full object-cover"
+                className="w-full object-cover"
               />
             </div>
           </motion.div>

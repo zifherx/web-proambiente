@@ -35,7 +35,7 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.2 }}
       ></motion.div>
       <motion.div
-        className="absolute -right-10 top-20 h-32 w-32 rounded-full bg-blueAmbiente/5"
+        className="absolute right-10 top-20 h-32 w-32 rounded-full bg-blueAmbiente/5"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
