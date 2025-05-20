@@ -8,8 +8,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ImageGallery } from "./Shared/ImageGallery";
 
-import { createWhatsAppLink } from "@/lib/global";
+import { createWhatsAppLinkForProduct } from "@/lib/global";
 import { HeroProductProp } from "@/types/Props";
+import { cn } from "@/lib/utils";
 
 export function HeroSection({ product, icon: Icon }: HeroProductProp) {
   return (
@@ -46,18 +47,10 @@ export function HeroSection({ product, icon: Icon }: HeroProductProp) {
                   variant="outline"
                   className="bg-primary/10 text-sm font-medium text-primary"
                 >
-                  {product.category === "insecticidas"
-                    ? "Insecticida"
-                    : product.category === "rodenticidas"
-                    ? "Rodenticida"
-                    : product.category === "desinfectantes"
-                    ? "Desinfectante"
-                    : product.category === "sanitizantes"
-                    ? "Sanitizante"
-                    : product.category === "repelentes"
-                    ? "Repelente"
+                  {product.category === "insumos"
+                    ? "Insumos"
                     : product.category === "trampas"
-                    ? "Trampa"
+                    ? "Trampas"
                     : "Equipo"}
                 </Badge>
                 <Badge
@@ -92,7 +85,7 @@ export function HeroSection({ product, icon: Icon }: HeroProductProp) {
                 </h1>
               </div>
 
-              <p className="mb-6 text-xl text-gray-600">
+              <p className={cn("mb-6 text-xl text-gray-600", product.shortDescription.includes('\n') ? "whitespace-pre" : "whitespace-normal")}>
                 {product.shortDescription}
               </p>
 
@@ -100,7 +93,7 @@ export function HeroSection({ product, icon: Icon }: HeroProductProp) {
                 <h2 className="mb-3 text-lg font-semibold text-gray-800">
                   Descripción
                 </h2>
-                <p className="text-gray-600">{product.description}</p>
+                <p className={cn("text-gray-600", product.description.includes("\n") ? "whitespace-pre" : "whitespace-normal text-justify")}>{product.description}</p>
               </div>
 
               {product.price && (
@@ -117,7 +110,7 @@ export function HeroSection({ product, icon: Icon }: HeroProductProp) {
               <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <Button size="lg" asChild>
                   <a
-                    href={createWhatsAppLink(product.name)}
+                    href={createWhatsAppLinkForProduct(product.name)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

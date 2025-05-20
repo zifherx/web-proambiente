@@ -24,9 +24,9 @@ export function CatalogoView() {
   const searchParams = useSearchParams();
   const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] =
-    useState<ProductCategory>("insecticidas");
+    useState<ProductCategory>("trampas");
   const [filteredProducts, setFilteredProducts] = useState(
-    getProductsByCategory("insecticidas")
+    getProductsByCategory("trampas")
   );
   const [isSearching, setIsSearching] = useState(false);
   const categories = getAllProductCategories();

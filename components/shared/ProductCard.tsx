@@ -10,7 +10,7 @@ import { Badge } from "../ui/badge";
 import { FadeInWhenVisible } from "./FadeInWhenVisible";
 
 import { ProductCardProp } from "@/types/Props";
-import { createWhatsAppLink } from "@/lib/global";
+import { createWhatsAppLinkForProduct } from "@/lib/global";
 
 export function ProductCard({ index, product }: ProductCardProp) {
   const [isHovered, setIsHovered] = useState(false);
@@ -33,7 +33,7 @@ export function ProductCard({ index, product }: ProductCardProp) {
         <Link href={`/productos/${product.slug}`}>
           <div className="relative h-48 overflow-hidden">
             <Image
-              src={product.coverImage}
+              src={`/images/products/${product.coverImage}`}
               alt={product.name}
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -60,16 +60,8 @@ export function ProductCard({ index, product }: ProductCardProp) {
               variant="outline"
               className="bg-blueAmbiente/10 text-xs font-medium text-blueAmbiente"
             >
-              {product.category === "insecticidas"
-                ? "Insecticida"
-                : product.category === "rodenticidas"
-                ? "Rodenticida"
-                : product.category === "desinfectantes"
-                ? "Desinfectante"
-                : product.category === "sanitizantes"
-                ? "Sanitizante"
-                : product.category === "repelentes"
-                ? "Repelente"
+              {product.category === "insumos"
+                ? "Insumos"
                 : product.category === "trampas"
                 ? "Trampa"
                 : "Equipo"}
@@ -118,7 +110,7 @@ export function ProductCard({ index, product }: ProductCardProp) {
             </Link>
 
             <a
-              href={createWhatsAppLink(product.name)}
+              href={createWhatsAppLinkForProduct(product.name)}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center rounded-full bg-green-500 p-2 text-white shadow-sm transition-transform hover:scale-105"
