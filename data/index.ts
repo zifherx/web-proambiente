@@ -86,14 +86,14 @@ export const CounterData: CounterProp[] = [
   {
     id: 1,
     label: "Clientes Satisfechos",
-    end: 500,
+    end: 800,
     lineRight: true,
     lineRightMobile: true,
   },
   {
     id: 2,
     label: "Servicios Realizados",
-    end: 1500,
+    end: 4500,
     lineRight: true,
     lineRightMobile: true,
   },

@@ -1,4 +1,11 @@
+import { ProductosData } from "@/data";
 import { ProductView } from "./components/ProductView";
+
+export async function generateStaticParams(){
+  return ProductosData.map((item) => {
+    return { productSlug: item.slug}
+  })
+}
 
 export default async function ProductPage({
   params,
