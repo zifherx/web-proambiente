@@ -15,7 +15,7 @@ export function CaracteristicasSection({ service }: ServiceCard) {
               <h2 className="mb-6 text-3xl font-bold text-gray-900">
                 Descripción del Servicio
               </h2>
-              <div className="prose prose-lg max-w-none text-gray-600">
+              <div className="max-w-none text-gray-600">
                 <p>{service.fullDescription}</p>
               </div>
             </FadeInWhenVisible>

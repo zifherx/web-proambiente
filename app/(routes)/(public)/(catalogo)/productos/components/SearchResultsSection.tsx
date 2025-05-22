@@ -1,7 +1,7 @@
 "use client";
 
 import { SearchResults } from "./Shared/SearchResults";
-import ProductCategories from "./Shared/ProductCategories";
+import {ProductCategories} from "./Shared/ProductCategories";
 
 import { SearchSectionProp } from "@/types/Props";
 

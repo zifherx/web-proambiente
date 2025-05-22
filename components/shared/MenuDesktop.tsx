@@ -78,33 +78,20 @@ export function MenuDesktop() {
                   <li>
                     <Link
                       href="/servicios/desratizacion"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
                       <div className="text-sm font-medium leading-none">
-                        Saneamiento Ambiental
+                        Desratización
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug">
-                        Desratización, desinsectación y más
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/servicios/limpieza-oficinas"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                    >
-                      <div className="text-sm font-medium leading-none">
-                        Limpieza Integral
-                      </div>
-                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Limpieza de oficinas, fachadas y más.
+                        Control y eliminación de roedores.
                       </p>
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/servicios/desinfeccion"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
                       <div className="text-sm font-medium leading-none">
                         Desinfección
@@ -116,8 +103,60 @@ export function MenuDesktop() {
                   </li>
                   <li>
                     <Link
+                      href="/servicios/desinsectacion"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Desinsectación
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Control y eliminación de insectos.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-oficinas"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de oficinas
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Servicio profesional para empresas.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-fachadas"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de fachadas
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Restauración de imagen exterior.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-tanques"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de tanques
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Matenimiento de cisternas y reservorios.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/servicios/control-aviar"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
                       <div className="text-sm font-medium leading-none">
                         Control Aviar
@@ -127,10 +166,49 @@ export function MenuDesktop() {
                       </p>
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-campanas"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de campanas
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Mantenimientos de campanas extractoras.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-pozos-septicos"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de pozos sépticos
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Mantenimientos preventivos y correctivos.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-trampas-grasa"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de trampas de grasa
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Mantenimientos para restaurantes y cocinas.
+                      </p>
+                    </Link>
+                  </li>
                   <li className="md:col-span-2">
                     <Link
                       href="/servicios"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
                       <div className="text-sm font-medium leading-none">
                         Ver todos los servicios
