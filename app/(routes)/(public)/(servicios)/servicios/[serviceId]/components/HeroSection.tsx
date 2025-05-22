@@ -40,7 +40,7 @@ export function HeroSection({ icon: Icon, service }: HeroServiceProp) {
               <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
                 {service.title}
               </h1>
-              <p className="mb-8 text-xl text-gray-600">
+              <p className="mb-8 text-xl text-gray-600 whitespace-pre-line">
                 {service.shortDescription}
               </p>
               <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">

@@ -158,7 +158,7 @@ export function BannerCarrusel() {
                     >
                       <div className="relative w-full max-w-md h-[400px]">
                         <Image
-                          src="/images/banners/banner-trampas-grasa.jpeg"
+                          src="/images/banners/desinsectacion-7.jpeg"
                           alt="Equipos profesionales de saneamiento"
                           fill
                           className="object-cover rounded-lg shadow-xl"
