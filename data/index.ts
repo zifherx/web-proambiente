@@ -118,7 +118,7 @@ export const VentajasData: VentajasProp[] = [
     id: 1,
     title: "Profesionales Especializados",
     description:
-      "Contamos cn un equipo de profesionales con experiencia comproada en el sector de saneamiento ambiental.",
+      "Contamos con un equipo de profesionales con experiencia comproada en el sector de saneamiento ambiental.",
     delay: 0.1,
     icon: Users,
   },
