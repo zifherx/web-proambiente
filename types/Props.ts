@@ -133,7 +133,6 @@ export type FeaturesServiceProp = {
 };
 
 export type SearchToolbarProp = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   handleSearch: (e: any) => void;
   searchTerm: string;
   setSearchTerm: Dispatch<SetStateAction<string>>;
