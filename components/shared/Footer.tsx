@@ -12,7 +12,7 @@ export function Footer() {
   const today = new Date().getFullYear();
   return (
     <footer className="bg-blueAmbiente text-white">
-      <div className="container mx-auto px-4 py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Image
@@ -23,7 +23,7 @@ export function Footer() {
               className="mx-auto"
             />
             <p className="text-primary-foreground/90 max-w-xs">
-              Empresa especialziada en saneamiento ambiental, fumigaciones,
+              Empresa especializada en saneamiento ambiental, fumigaciones,
               gestión, monitoreo y control de plagas.
             </p>
             <div className="flex space-x-4 justify-center">

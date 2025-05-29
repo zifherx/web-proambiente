@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
+
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "../ui/navigation-menu";
+
 import { cn } from "@/lib/utils";
 
 export function MenuDesktop() {
@@ -90,19 +92,6 @@ export function MenuDesktop() {
                   </li>
                   <li>
                     <Link
-                      href="/servicios/desinfeccion"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
-                    >
-                      <div className="text-sm font-medium leading-none">
-                        Desinfección
-                      </div>
-                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Servicios de desinfección profesional.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="/servicios/desinsectacion"
                       className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
@@ -116,27 +105,40 @@ export function MenuDesktop() {
                   </li>
                   <li>
                     <Link
-                      href="/servicios/limpieza-oficinas"
+                      href="/servicios/control-aviar"
                       className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
                       <div className="text-sm font-medium leading-none">
-                        Limpieza de oficinas
+                        Control Aviar
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Servicio profesional para empresas.
+                        Soluciones para el control de aves.
                       </p>
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/servicios/limpieza-fachadas"
+                      href="/servicios/limpieza-trampas-grasa"
                       className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
                     >
                       <div className="text-sm font-medium leading-none">
-                        Limpieza de fachadas
+                        Limpieza de trampas de grasa
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Restauración de imagen exterior.
+                        Mantenimientos para restaurantes y cocinas.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/servicios/limpieza-ambientes"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
+                    >
+                      <div className="text-sm font-medium leading-none">
+                        Limpieza de ambientes
+                      </div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Servicio profesional para empresas.
                       </p>
                     </Link>
                   </li>
@@ -150,19 +152,6 @@ export function MenuDesktop() {
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Matenimiento de cisternas y reservorios.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/servicios/control-aviar"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
-                    >
-                      <div className="text-sm font-medium leading-none">
-                        Control Aviar
-                      </div>
-                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Soluciones para el control de aves.
                       </p>
                     </Link>
                   </li>
@@ -189,19 +178,6 @@ export function MenuDesktop() {
                       </div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Mantenimientos preventivos y correctivos.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/servicios/limpieza-trampas-grasa"
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-greenAmbiente/10 hover:text-greenAmbiente focus:bg-greenAmbiente/10 focus:text-greenAmbiente"
-                    >
-                      <div className="text-sm font-medium leading-none">
-                        Limpieza de trampas de grasa
-                      </div>
-                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Mantenimientos para restaurantes y cocinas.
                       </p>
                     </Link>
                   </li>
