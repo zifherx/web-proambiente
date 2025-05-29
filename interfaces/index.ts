@@ -72,6 +72,7 @@ export interface Service extends BaseModel {
   galleryImages: GalleryType[];
   faqs: FaqsType[];
   delay: number;
+  isActive: boolean;
 }
 
 export interface Product extends BaseModel {
@@ -108,4 +109,12 @@ export interface ProductBenefit {
   icon: IconProp;
   beneficio: string;
   description: string;
+}
+
+export interface CustomerContact { 
+  cliente: string;
+  correo: string;
+  celular: string;
+  servicio: string;
+  mensaje: string
 }

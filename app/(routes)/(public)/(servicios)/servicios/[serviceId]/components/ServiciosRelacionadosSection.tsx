@@ -32,7 +32,7 @@ export function ServiciosRelacionadosSection({ service }: ServiceCard) {
                   >
                     <div className="relative h-48 overflow-hidden">
                       <Image
-                        src={`/images/`}
+                        src={`/images/services/${relatedService.slug}/${relatedService.coverImage}`}
                         alt={relatedService.title}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"

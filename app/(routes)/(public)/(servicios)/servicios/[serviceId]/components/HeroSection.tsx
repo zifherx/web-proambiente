@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 
 import { ArrowLeft, ArrowRight, Phone } from "lucide-react";
 import { HeroServiceProp } from "@/types/Props";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export function HeroSection({ icon: Icon, service }: HeroServiceProp) {
   return (
@@ -39,7 +40,7 @@ export function HeroSection({ icon: Icon, service }: HeroServiceProp) {
               <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
                 {service.title}
               </h1>
-              <p className="mb-8 text-xl text-gray-600">
+              <p className="mb-8 text-xl text-gray-600 whitespace-pre-line">
                 {service.shortDescription}
               </p>
               <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -68,13 +69,15 @@ export function HeroSection({ icon: Icon, service }: HeroServiceProp) {
             <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-blueAmbiente/5 blur-xl"></div>
             <div className="absolute -right-4 -top-4 h-32 w-32 rounded-full bg-blueAmbiente/10 blur-xl"></div>
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              {/* <AspectRatio ratio={16 / 9}> */}
               <Image
                 src={`/images/services/${service.slug}/${service.coverImage}`}
                 alt={service.title}
                 width={600}
                 height={400}
-                className="h-auto w-full object-cover"
-              />
+                className="object-contain"
+                />
+                {/* </AspectRatio> */}
             </div>
           </motion.div>
         </div>

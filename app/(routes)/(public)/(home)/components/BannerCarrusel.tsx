@@ -13,6 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function BannerCarrusel() {
 
@@ -23,103 +24,152 @@ export function BannerCarrusel() {
       <Carousel className="w-full" opts={{ loop: true}} plugins={[plugin.current]}>
         <CarouselContent>
           <CarouselItem>
-            <div className="relative h-[80vh] w-full bg-gray-200">
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-left p-4">
+            <div className="relative h-[80vh] w-full bg-gradient-to-r from-blueAmbiente/10 to-blueAmbiente/30 overflow-hidden">
+            <div className="max-w-7xl mx-auto h-full px-4">           
+              <div className="grid h-full grid-cols-1 md:grid-cols-2 items-center gap-8">
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="max-w-4xl"
+                  className="text-left"
                 >
-                  <h1 className="text-3xl md:text-5xl font-bold mb-4">
+                  <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
                     Creando entornos saludables
                   </h1>
-                  <p className="text-lg md:text-xl text-black/90 mb-6 max-w-2xl mx-auto">
+                  <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-xl">
                     Especialistas en saneamiento ambiental, fumigaciones y
                     control de plagas para empresas y hogares.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" asChild>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button size="lg" className="bg-blueAmbiente text-white hover:bg-blueAmbiente/60" asChild>
                       <Link href="/contacto">Solicitar Cotización</Link>
                     </Button>
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-black/10 text-black border-black/20 hover:bg-black/20"
+                      className="bg-transparent border-black hover:bg-black hover:text-white"
                       asChild
                     >
                       <Link href="/servicios">Nuestros Servicios</Link>
                     </Button>
                   </div>
                 </motion.div>
+                <motion.div
+                  initial={{opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1}}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="hidden md:flex justify-center items-center"
+                >
+                  <div className="relative w-full max-w-md h-[400px]">
+                    <Image
+                      src="/images/banners/banner-equipos.jpeg"
+                      alt="Servicios de desinfección"
+                      fill
+                      className="object-cover rounded-lg shadow-xl"
+                      priority
+                    />
+                    <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blueAmbiente/20 rounded-full"></div>
+                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-blueAmbiente/10 rounded-lg z-0"></div>
+                  </div>
+                </motion.div>
+              </div>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="relative h-[80vh] w-full bg-green-100">
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+            <div className="relative h-[80vh] w-full bg-gradient-to-l from-greenAmbiente/10 to-greenAmbiente/30 overflow-hidden">
+            <div className="max-w-7xl mx-auto h-full px-4">           
+              <div className="grid h-full grid-cols-1 md:grid-cols-2 items-center gap-8">
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="max-w-4xl"
+                  className="hidden md:flex justify-center items-center order-last md:order-first"
                 >
-                  <h1 className="text-3xl md:text-5xl font-bold mb-4">
+                  <div className="relative w-full max-w-md h-[400px]">
+                    <Image
+                      src="/images/banners/banner-equipo3.jpg"
+                      alt="Servicios de Fumigacion profesional"
+                      fill
+                      className="object-cover rounded-lg shadow-xl"
+                    />
+                    <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-greenAmbiente/20 rounded-full"></div>
+                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-greenAmbiente/10 rounded-lg z-0"></div>
+                  </div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="text-left"
+                >
+                  <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
                     Profesionales en nuestra labor
                   </h1>
-                  <p className="text-lg md:text-xl text-black/90 mb-6 max-w-2xl mx-auto">
-                    Trabajando tu espacio con eficiencia y caldiad de servicio.
-                    Llegamos a tu empresa para brindarte un servicio de calidad
+                  <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-xl">
+                    Trabajando tu espacio con eficiencia y calidad de servicio. Llegamos a tu empresa para brindarte un servicio de calidad.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" asChild>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button size="lg" className="bg-greenAmbiente text-white hover:bg-greenAmbiente/60" asChild>
                       <Link href="/contacto">Contáctanos</Link>
                     </Button>
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-black/10 text-black border-black/20 hover:bg-black/20"
+                      className="bg-transparent border-black hover:bg-black hover:text-white"
                       asChild
                     >
-                      <Link href="/servicios">Conoce más</Link>
+                      <Link href="/quienes-somos">Conoce más</Link>
                     </Button>
                   </div>
                 </motion.div>
+              </div>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="relative h-[80vh] w-full bg-cyan-100">
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="max-w-4xl"
-                >
-                  <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                    Equipos de alta tecnología
-                  </h1>
-                  <p className="text-lg md:text-xl text-black/90 mb-6 max-w-2xl mx-auto">
-                    Utilizamos equipos nuevos, de alta tecnología y eficacia
-                    para garantizar resultados óptimos.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" asChild>
-                      <Link href="/contacto">Solicitar Servicio</Link>
-                    </Button>
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="bg-black/10 text-black border-black/20 hover:bg-black/20"
-                      asChild
+          <div className="relative h-[80vh] w-full bg-gradient-to-r from-blueAmbiente/10 to-blueAmbiente/30 overflow-hidden">
+                <div className="max-w-7xl mx-auto h-full px-4">
+                  <div className="grid h-full grid-cols-1 md:grid-cols-2 items-center gap-8">
+                    <motion.div
+                      initial={{ opacity: 0, x: -50 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5 }}
+                      className="text-left"
                     >
-                      <Link href="/servicios">Nuestras ventajas</Link>
-                    </Button>
+                      <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Equipos de alta tecnología</h1>
+                      <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-xl">
+                        Utilizamos equipos nuevos, de alta tecnología y eficacia para garantizar resultados óptimos.
+                      </p>
+                      <div className="flex flex-col sm:flex-row gap-4">
+                        <Button size="lg" asChild className="bg-blueAmbiente text-white hover:bg-blueAmbiente/60">
+                          <Link href="/contacto">Solicitar Servicio</Link>
+                        </Button>
+                        <Button size="lg" variant="outline" className="bg-transparent border-black hover:bg-black hover:text-white" asChild>
+                          <Link href="/quienes-somos#ventajas">Nuestras Ventajas</Link>
+                        </Button>
+                      </div>
+                    </motion.div>
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      className="hidden md:flex justify-center items-center"
+                    >
+                      <div className="relative w-full max-w-md h-[400px]">
+                        <Image
+                          src="/images/banners/banner-equipo.jpg"
+                          alt="Equipos profesionales de saneamiento"
+                          fill
+                          className="object-cover rounded-lg shadow-xl"
+                        />
+                        <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blueAmbiente/20 rounded-full z-0"></div>
+                        <div className="absolute -top-4 -left-4 w-24 h-24 bg-blueAmbiente/10 rounded-lg z-0"></div>
+                      </div>
+                    </motion.div>
                   </div>
-                </motion.div>
+                </div>
               </div>
-            </div>
           </CarouselItem>
         </CarouselContent>
         <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">

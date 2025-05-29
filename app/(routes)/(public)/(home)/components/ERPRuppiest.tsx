@@ -21,7 +21,7 @@ export function ERPRuppiest() {
                 Sistema ERP ProAmbiente
               </h2>
               <p className="text-lg text-muted-foreground">
-                Implementamos el innovador sistema ERP Ruppiest que nos permite
+                Implementamos el innovador sistema ERP que nos permite
                 optimizar procesos, mejorar la gestión de recursos y ofrecer un
                 servicio más eficiente y transparente a nuestros clientes.
               </p>

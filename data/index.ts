@@ -86,14 +86,14 @@ export const CounterData: CounterProp[] = [
   {
     id: 1,
     label: "Clientes Satisfechos",
-    end: 500,
+    end: 800,
     lineRight: true,
     lineRightMobile: true,
   },
   {
     id: 2,
     label: "Servicios Realizados",
-    end: 1500,
+    end: 4500,
     lineRight: true,
     lineRightMobile: true,
   },
@@ -294,7 +294,7 @@ export const ClientesData: ClientesProp[] = [
   {
     id: 17,
     name: "San Jacinto",
-    slug: "logo-la-lucha",
+    slug: "logo-san-jacinto",
     ext: "jpg",
   },
   {
@@ -313,6 +313,30 @@ export const ClientesData: ClientesProp[] = [
     id: 20,
     name: "Vitas",
     slug: "logo-vitas",
+    ext: "jpg",
+  },
+  {
+    id: 21,
+    name: "Koi Maki Bar",
+    slug: "logo-koi-maki",
+    ext: "png",
+  },
+  {
+    id: 22,
+    name: "Sociedad Automotores Inka SAC",
+    slug: "logo-sai",
+    ext: "png",
+  },
+  {
+    id: 23,
+    name: "Rincon de Vallejo",
+    slug: "logo-rincon-vallejo",
+    ext: "jpg",
+  },
+  {
+    id: 24,
+    name: "Pizzeria San Remo",
+    slug: "logo-san-remo",
     ext: "jpg",
   },
 ];
@@ -372,10 +396,10 @@ export const StepProcessDiagram: IProcessDiagram[] = [
   {
     id: 3,
     key: "erp",
-    title: "ERP Ruppiest",
+    title: "ERP",
     icon: Database,
     description:
-      "Implementamos el innovador sistema ERP Ruppiest que nos permite optimizar procesos, mejorar la gestión de recursos y ofrecer un servicio más eficiente a nuestros clientes.",
+      "Implementamos el innovador sistema ERP que nos permite optimizar procesos, mejorar la gestión de recursos y ofrecer un servicio más eficiente a nuestros clientes.",
     position: {
       x: "90%",
       y: "20%",
@@ -399,7 +423,7 @@ export const StepProcessDiagram: IProcessDiagram[] = [
     title: "Aplicación Móvil",
     icon: Smartphone,
     description:
-      "Nuestros técnicos utilizan una aplicación móvil conectada al ERP Ruppiest para registrar cada servicio, documentar con fotografias y generar informes detallados para nuestros clientes.",
+      "Nuestros técnicos utilizan una aplicación móvil conectada al ERP para registrar cada servicio, documentar con fotografias y generar informes detallados para nuestros clientes.",
     position: {
       x: "50%",
       y: "90%",
@@ -490,9 +514,10 @@ export const ServiciosData: Service[] = [
     id: 1,
     slug: "desratizacion",
     title: "Desratización",
-    shortDescription: "Control y eliminació de roedores",
+    isActive: true,
+    shortDescription: "Control y eliminación de roedores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
-      "Nuestro servicio de desratización está diseñado para eliminar de manera efectiva y segura las infestaciones de roedores en hogares, empresas e industrias. Utilizamos métodos avanzados y productos certificados que garantizan resultados duraderos sin comprometer la seguridad de las personas, mascotas o el medio ambiente.",
+      "Nuestro servicio de desratización está diseñado para eliminar de manera efectiva y segura las infestaciones de roedores en hogares, empresas e industrias. Utilizamos métodos avanzados y productos certificados que garantizan resultados duraderos sin comprometer la seguridad de las personas, mascotas o el medio ambiente. Servicio integrado con nuestro ERP, para un monitoreo de la trazabilidad en tiempo real para cumplir futuras auditorias.",
     category: "saneamiento",
     icon: Rat,
     features: [
@@ -574,12 +599,32 @@ export const ServiciosData: Service[] = [
         id: 5,
         title: "Ambiente más saludable y seguro",
       },
+      {
+        id: 6,
+        title: "Monitoreo y trazabilidad en tiempo real",
+      }
     ],
-    coverImage: "",
+    coverImage: "desratizacion-2.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "desratizacion-1.jpg",
+      },
+      {
+        id: 2,
+        url: "desratizacion-2.jpg",
+      },
+      {
+        id: 3,
+        url: "desratizacion-3.jpeg",
+      },
+      {
+        id: 4,
+        url: "desratizacion-4.jpeg",
+      },
+      {
+        id: 5,
+        url: "desratizacion-5.jpeg",
       },
     ],
     faqs: [
@@ -609,7 +654,8 @@ export const ServiciosData: Service[] = [
     id: 2,
     slug: "desinsectacion",
     title: "Desinsectación",
-    shortDescription: "Control y eliminación de insectos",
+    isActive: true,
+    shortDescription: "Control y eliminación de insectos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desinsectación combate eficazmente todo tipo de insectos plaga como cucarachas, hormigas, moscas, mosquitos, pulgas y otros. Utilizamos técnicas avanzadas y productos biodegradables que eliminan las plagas existentes y previenen futuras infestaciones, garantizando espacios libres de insectos.",
     category: "saneamiento",
@@ -687,18 +733,42 @@ export const ServiciosData: Service[] = [
       },
       {
         id: 4,
-        title: "Mejora de la calidad de vida y confort",
-      },
-      {
-        id: 5,
         title: "Cumplimiento de normativas sanitarias",
       },
     ],
-    coverImage: "/service-2.jpg",
+    coverImage: "desinsectacion-2.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "desinsectacion-2.jpeg",
+      },
+      {
+        id: 2,
+        url: "desinsectacion-3.jpeg",
+      },
+      {
+        id: 3,
+        url: "desinsectacion-11.jpeg",
+      },
+      {
+        id: 4,
+        url: "desinsectacion-5.jpeg",
+      },
+      {
+        id: 5,
+        url: "desinsectacion-6.jpeg",
+      },
+      {
+        id: 6,
+        url: "desinsectacion-7.jpeg",
+      },
+      {
+        id: 7,
+        url: "desinsectacion-12.jpeg",
+      },
+      {
+        id: 8,
+        url: "desinsectacion-10.jpeg",
       },
     ],
     faqs: [
@@ -727,7 +797,8 @@ export const ServiciosData: Service[] = [
     id: 3,
     slug: "desinfeccion",
     title: "Desinfección",
-    shortDescription: "Eliminación de microorganismos",
+    isActive: true,
+    shortDescription: "Eliminación de microorganismos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desinfección elimina virus, bacterias, hongos y otros microorganismos patógenos de superficies y ambientes. Utilizamos desinfectantes de amplio espectro y equipos de última generación para garantizar la higienización completa de espacios residenciales, comerciales e industriales, creando entornos más saludables y seguros.",
     category: "saneamiento",
@@ -812,12 +883,40 @@ export const ServiciosData: Service[] = [
         title: "Mayor seguridad para ocupantes y visitantes",
       },
     ],
-    coverImage: "/service-3.jpg",
+    coverImage: "desinfeccion-1.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "desinfeccion-1.jpg",
       },
+      {
+        id: 2,
+        url: "desinfeccion-2.jpg",
+      },
+      {
+        id: 3,
+        url: "desinfeccion-3.jpg",
+      },
+      {
+        id: 4,
+        url: "desinfeccion-4.jpg",
+      },
+      {
+        id: 5,
+        url: "desinfeccion-5.jpg",
+      },
+      {
+        id: 6,
+        url: "desinfeccion-6.jpg",
+      },
+      {
+        id: 7,
+        url: "desinfeccion-7.jpg",
+      },
+      {
+        id: 8,
+        url: "desinfeccion-8.jpg",
+      }
     ],
     faqs: [
       {
@@ -844,9 +943,10 @@ export const ServiciosData: Service[] = [
   },
   {
     id: 4,
-    slug: "limpieza-oficinas",
-    title: "Limpieza de Oficinas",
-    shortDescription: "Servicio profesional para empresas",
+    slug: "limpieza-ambientes",
+    title: "Limpieza de Ambientes",
+    isActive: true,
+    shortDescription: "Servicio profesional para empresas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos un servicio integral de limpieza y mantenimiento para oficinas y espacios de trabajo. Nuestro equipo profesional se encarga de mantener impecables todas las áreas, desde escritorios y salas de reuniones hasta baños y áreas comunes, utilizando productos y técnicas que garantizan un ambiente laboral limpio, ordenado y saludable.",
     category: "auxiliares",
@@ -931,17 +1031,57 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas de higiene y seguridad laboral",
       },
     ],
-    coverImage: "/limpieza-1.jpg",
+    coverImage: "limpieza-ambientes-3.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-ambientes-1.jpeg",
       },
+      {
+        id: 2,
+        url: "limpieza-ambientes-2.jpeg",
+      },
+      {
+        id: 3,
+        url: "limpieza-ambientes-3.jpeg",
+      },
+      {
+        id: 4,
+        url: "limpieza-ambientes-4.jpeg",
+      },
+      {
+        id: 5,
+        url: "limpieza-ambientes-5.jpeg",
+      },
+      {
+        id: 6,
+        url: "limpieza-ambientes-6.jpeg",
+      },
+      {
+        id: 7,
+        url: "limpieza-ambientes-7.jpeg",
+      },
+      {
+        id: 8,
+        url: "limpieza-ambientes-8.jpeg",
+      },
+      {
+        id: 9,
+        url: "limpieza-ambientes-9.jpeg",
+      },
+      {
+        id: 10,
+        url: "limpieza-ambientes-10.jpeg",
+      },
+      {
+        id: 11,
+        url: "limpieza-ambientes-11.jpeg",
+      }
     ],
     faqs: [
       {
         id: 1,
-        question: "¿Qué incluye el servicio de limpieza de oficinas?",
+        question: "¿Qué incluye el servicio de limpieza de ambientes?",
         answer:
           "Incluye limpieza de pisos, mobiliario, equipos, baños, cocinas, salas de reuniones, recepción y áreas comunes. También ofrecemos servicios adicionales como limpieza de vidrios, alfombras y desinfección profunda.",
       },
@@ -957,160 +1097,33 @@ export const ServiciosData: Service[] = [
         answer:
           "Sí, nosotros proporcionamos todos los productos, materiales y equipos necesarios para realizar un servicio profesional y completo.",
       },
-    ],
-    delay: 0.4,
-  },
-  {
-    id: 5,
-    slug: "limpieza-fachadas",
-    title: "Limpieza de Fachadas",
-    shortDescription: "Restauración de imagen exterior",
-    fullDescription:
-      "Nuestro servicio especializado de limpieza de fachadas devuelve el aspecto original a los exteriores de edificios y negocios. Eliminamos suciedad, polvo, contaminación, grafitis y manchas utilizando técnicas específicas para cada tipo de superficie, ya sea vidrio, concreto, ladrillo, metal o piedra, mejorando significativamente la apariencia e imagen de su propiedad.",
-    category: "auxiliares",
-    icon: Building2,
-    features: [
-      {
-        id: 1,
-        title: "Limpieza especializada",
-        description:
-          "Técnicas adaptadas a cada tipo de material y superficie para resultados óptimos.",
-      },
-      {
-        id: 2,
-        title: "Equipos profesionales",
-        description:
-          "Utilizamos hidrolavadoras, plataformas elevadoras y herramientas especializadas.",
-      },
-      {
-        id: 3,
-        title: "Productos no abrasivos",
-        description:
-          "Empleamos limpiadores que eliminan la suciedad sin dañar los materiales de la fachada.",
-      },
       {
         id: 4,
-        title: "Tratamientos protectores",
-        description:
-          "Aplicamos selladores y protectores que prolongan la limpieza y protegen la superficie.",
-      },
-    ],
-    process: [
-      {
-        id: 1,
-        title: "Inspección",
-        description:
-          "Evaluación del tipo de superficie, nivel de suciedad y accesibilidad.",
-      },
-      {
-        id: 2,
-        title: "Planificación",
-        description:
-          "Selección de técnicas, productos y equipos adecuados para cada caso.",
-      },
-      {
-        id: 3,
-        title: "Preparación",
-        description:
-          "Protección de áreas adyacentes y elementos que no deben ser mojados o limpiados.",
-      },
-      {
-        id: 4,
-        title: "Limpieza",
-        description:
-          "Aplicación de productos y técnicas de limpieza según el plan establecido.",
-      },
-      {
-        id: 5,
-        title: "Protección",
-        description:
-          "Aplicación opcional de tratamientos protectores para prolongar los resultados.",
-      },
-    ],
-    benefits: [
-      {
-        id: 1,
-        title: "Mejora significativa de la imagen exterior",
-      },
-      {
-        id: 2,
-        title: "Aumento del valor percibido de la propiedad",
-      },
-      {
-        id: 3,
-        title: "Prevención del deterioro de materiales",
-      },
-      {
-        id: 4,
-        title: "Eliminación de agentes contaminantes",
-      },
-      {
-        id: 5,
-        title: "Mayor durabilidad de la fachada",
-      },
-    ],
-    coverImage: "limpieza-fachada-2.jpeg",
-    galleryImages: [
-      {
-        id: 1,
-        url: "limpieza-fachada-1.jpeg",
-      },
-      {
-        id: 2,
-        url: "limpieza-fachada-3.jpeg",
-      },
-      {
-        id: 3,
-        url: "limpieza-fachada-4.jpeg",
-      },
-      {
-        id: 4,
-        url: "limpieza-fachada-5.jpeg",
-      },
-      {
-        id: 5,
-        url: "limpieza-fachada-6.jpeg",
-      },
-      {
-        id: 6,
-        url: "limpieza-fachada-7.jpeg",
-      },
-      {
-        id: 7,
-        url: "limpieza-fachada-8.jpeg",
-      },
-      {
-        id: 8,
-        url: "limpieza-fachada-9.jpeg",
-      },
-    ],
-    faqs: [
-      {
-        id: 1,
         question: "¿La limpieza de fachadas puede dañar los materiales?",
         answer:
           "No cuando se realiza correctamente. Utilizamos técnicas y productos específicos para cada tipo de material, ajustando la presión y temperatura del agua para evitar daños.",
       },
       {
-        id: 2,
+        id: 5,
         question: "¿Cuánto tiempo toma limpiar una fachada?",
         answer:
           "Depende del tamaño, altura, accesibilidad y nivel de suciedad. Una fachada pequeña puede tomar 1 día, mientras que edificios grandes pueden requerir varios días.",
       },
       {
-        id: 3,
+        id: 6,
         question: "¿Con qué frecuencia se debe limpiar una fachada?",
         answer:
           "Recomendamos una limpieza profesional anual o bianual, dependiendo de la exposición a contaminación, clima y tipo de superficie.",
       },
     ],
-    delay: 0.5,
+    delay: 0.4,
   },
   {
     id: 6,
     slug: "limpieza-tanques",
     title: "Limpieza de Tanques",
-    shortDescription: "Mantenimiento de cisternas y reservorios",
+    isActive: true,
+    shortDescription: "Mantenimiento de cisternas y reservorios.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de limpieza y desinfección de tanques de agua garantiza que su suministro de agua se mantenga limpio y seguro. Eliminamos sedimentos, algas, bacterias y otros contaminantes que pueden acumularse en cisternas y reservorios, cumpliendo con todas las normativas sanitarias vigentes y proporcionando certificados de limpieza.",
     category: "auxiliares",
@@ -1195,11 +1208,51 @@ export const ServiciosData: Service[] = [
         title: "Mayor vida útil del tanque y sistemas de distribución",
       },
     ],
-    coverImage: "/limpieza-3.jpg",
+    coverImage: "limpieza-tanques-1.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-tanques-2.jpg",
+      },
+      {
+        id: 2,
+        url: "limpieza-tanques-3.jpg",
+      },
+      {
+        id: 3,
+        url: "limpieza-tanques-4.jpg",
+      },
+      {
+        id: 4,
+        url: "limpieza-tanques-5.jpg",
+      },
+      {
+        id: 5,
+        url: "limpieza-tanques-6.jpg",
+      },
+      {
+        id: 6,
+        url: "limpieza-tanques-7.jpg",
+      },
+      {
+        id: 7,
+        url: "limpieza-tanques-8.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-tanques-9.jpeg",
+      },
+      {
+        id: 9,
+        url: "limpieza-tanques-10.jpeg",
+      },
+      {
+        id: 10,
+        url: "limpieza-tanques-11.jpeg",
+      },
+      {
+        id: 11,
+        url: "limpieza-tanques-12.jpeg",
       },
     ],
     faqs: [
@@ -1230,10 +1283,11 @@ export const ServiciosData: Service[] = [
     id: 7,
     slug: "control-aviar",
     title: "Control Aviar",
-    shortDescription: "Soluciones para el control de aves",
+    isActive: true,
+    shortDescription: "Soluciones para el control de aves.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos soluciones efectivas y humanitarias para el control de aves en edificios y estructuras. Implementamos sistemas que impiden la anidación y percha de aves sin causarles daño, protegiendo su propiedad de los problemas asociados con la presencia de aves como palomas, gaviotas y otras especies urbanas.",
-    category: "auxiliares",
+    category: "saneamiento",
     icon: Bird,
     features: [
       {
@@ -1314,12 +1368,20 @@ export const ServiciosData: Service[] = [
         title: "Reducción de costos de limpieza y mantenimiento",
       },
     ],
-    coverImage: "/auxiliar-1.jpg",
+    coverImage: "control-aviar-1.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "control-aviar-2.jpg",
       },
+      {
+        id: 2,
+        url: "control-aviar-3.jpg",
+      },
+      {
+        id: 3,
+        url: "control-aviar-4.jpg",
+      }
     ],
     faqs: [
       {
@@ -1348,7 +1410,8 @@ export const ServiciosData: Service[] = [
     id: 8,
     slug: "lamparas-insectocutoras",
     title: "Lámparas Insectocutoras",
-    shortDescription: "Control de insectos voladores",
+    isActive: false,
+    shortDescription: "Control de insectos voladores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Instalamos y mantenemos lámparas insectocutoras de alta eficiencia para el control de insectos voladores en interiores. Estos dispositivos atraen y eliminan moscas, mosquitos, polillas y otros insectos voladores de manera higiénica y discreta, siendo ideales para restaurantes, cocinas industriales, áreas de procesamiento de alimentos y otros espacios donde la presencia de insectos es inaceptable.",
     category: "auxiliares",
@@ -1466,10 +1529,11 @@ export const ServiciosData: Service[] = [
   {
     id: 9,
     slug: "limpieza-campanas",
-    title: "Limpieza de Campanas",
-    shortDescription: "Mantenimiento de campanas extractoras",
+    title: "Limpieza de Campanas.",
+    isActive: true,
+    shortDescription: "Mantenimiento de campanas extractoras.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
-      "Nuestro servicio especializado de limpieza de campanas extractoras y sistemas de ventilación elimina la acumulación de grasa y residuos en cocinas comerciales e industriales. Este mantenimiento es crucial para prevenir incendios, mejorar la eficiencia de los equipos, cumplir con normativas de seguridad y mantener un ambiente de trabajo saludable.",
+      "Nuestro servicio especializado de limpieza de ductos y campanas y sistemas de extracción eliminando la acumulación de grasa y residuos en cocinas comerciales e industriales. Este mantenimiento es crucial para prevenir incendios, mejorar la eficiencia de los equipos, cumplir con normativas de seguridad y mantener un ambiente de trabajo saludable.",
     category: "auxiliares",
     icon: Utensils,
     features: [
@@ -1552,12 +1616,52 @@ export const ServiciosData: Service[] = [
         title: "Mayor vida útil de los equipos de ventilación",
       },
     ],
-    coverImage: "/auxiliar-3.jpg",
+    coverImage: "limpieza-campanas-2.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-campanas-1.jpg",
       },
+      {
+        id: 2,
+        url: "limpieza-campanas-2.jpg",
+      },
+      {
+        id: 3,
+        url: "limpieza-campanas-3.jpg",
+      },
+      {
+        id: 4,
+        url: "limpieza-campanas-4.jpg",
+      },
+      {
+        id: 5,
+        url: "limpieza-campanas-5.jpg",
+      },
+      {
+        id: 6,
+        url: "limpieza-campanas-6.jpg",
+      },
+      {
+        id: 7,
+        url: "limpieza-campanas-7.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-campanas-8.jpg",
+      },
+      {
+        id: 9,
+        url: "limpieza-campanas-9.jpg",
+      },
+      {
+        id: 10,
+        url: "limpieza-campanas-10.jpg",
+      },
+      {
+        id: 11,
+        url: "limpieza-campanas-11.jpg",
+      }
     ],
     faqs: [
       {
@@ -1586,10 +1690,11 @@ export const ServiciosData: Service[] = [
     id: 10,
     slug: "limpieza-pozos-septicos",
     title: "Limpieza de Pozos Sépticos",
-    shortDescription: "Mantenimiento preventivo y correctivo",
+    isActive: true,
+    shortDescription: "Mantenimiento preventivo y correctivo.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos un servicio completo de limpieza, mantenimiento y desatoro de pozos sépticos, cajas de registro y sistemas de drenaje. Utilizamos equipos de succión al vacío y técnicas especializadas para eliminar lodos, sedimentos y obstrucciones, previniendo desbordamientos, malos olores y problemas sanitarios.",
-    category: "auxiliares",
+    category: "saneamiento",
     icon: Trash2,
     features: [
       {
@@ -1671,11 +1776,15 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas de saneamiento",
       },
     ],
-    coverImage: "/adicional-1.jpg",
+    coverImage: "limpieza-pozos-septicos-2.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-pozos-septicos-1.jpeg",
+      },
+      {
+        id: 2,
+        url: "limpieza-pozos-septicos-2.jpeg",
       },
     ],
     faqs: [
@@ -1704,11 +1813,12 @@ export const ServiciosData: Service[] = [
   {
     id: 11,
     slug: "limpieza-trampas-grasa",
-    title: "Limpieza de Trampas de Grasa",
-    shortDescription: "Mantenimiento para restaurantes y cocinas",
+    title: "Limpieza de Trampas de Grasa.",
+    isActive: true,
+    shortDescription: "Mantenimiento para restaurantes y cocinas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza de trampas de grasa previene obstrucciones en sistemas de drenaje de restaurantes y cocinas industriales. Removemos la acumulación de grasas, aceites y sólidos que pueden causar bloqueos, malos olores y problemas con las autoridades sanitarias, ayudando a mantener sus instalaciones funcionando correctamente.",
-    category: "auxiliares",
+    category: "saneamiento",
     icon: Pipette,
     features: [
       {
@@ -1789,12 +1899,36 @@ export const ServiciosData: Service[] = [
         title: "Prolongación de la vida útil del sistema de drenaje",
       },
     ],
-    coverImage: "/adicional-2.jpg",
+    coverImage: "limpieza-trampas-grasa-3.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-trampas-grasa-1.jpg",
       },
+      {
+        id: 2,
+        url: "limpieza-trampas-grasa-2.jpg",
+      },
+      {
+        id: 3,
+        url: "limpieza-trampas-grasa-3.jpg",
+      },
+      {
+        id: 4,
+        url: "limpieza-trampas-grasa-4.jpg",
+      },
+      {
+        id: 5,
+        url: "limpieza-trampas-grasa-5.jpg",
+      },
+      {
+        id: 6,
+        url: "limpieza-trampas-grasa-6.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-trampas-grasa-8.jpg",
+      }
     ],
     faqs: [
       {
@@ -1823,7 +1957,8 @@ export const ServiciosData: Service[] = [
     id: 12,
     slug: "limpieza-colchones",
     title: "Limpieza de Colchones",
-    shortDescription: "Eliminación de ácaros y alérgenos",
+    isActive: false,
+    shortDescription: "Eliminación de ácaros y alérgenos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio profesional de limpieza y desinfección de colchones elimina ácaros, bacterias, hongos y alérgenos que se acumulan con el tiempo. Utilizamos equipos de aspiración profunda, vapor seco y tratamientos anti-ácaros para proporcionar un ambiente de descanso más limpio y saludable, especialmente beneficioso para personas con alergias o problemas respiratorios.",
     category: "auxiliares",
@@ -1942,7 +2077,8 @@ export const ServiciosData: Service[] = [
     id: 13,
     slug: "limpieza-sumideros",
     title: "Limpieza de Red de Sumideros",
-    shortDescription: "Prevención de inundaciones y problemas de drenaje",
+    isActive: true,
+    shortDescription: "Prevención de inundaciones y problemas de drenaje.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza y mantenimiento de redes de sumideros y sistemas de drenaje pluvial previene inundaciones y problemas de acumulación de agua. Eliminamos sedimentos, residuos y obstrucciones que pueden bloquear el flujo normal del agua, garantizando el funcionamiento óptimo del sistema de drenaje en épocas de lluvia.",
     category: "auxiliares",
@@ -2026,11 +2162,19 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas municipales",
       },
     ],
-    coverImage: "/adicional-3.jpg",
+    coverImage: "limpieza-sumideros-1.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "",
+        url: "limpieza-sumideros-1.jpeg",
+      },
+      {
+        id: 2,
+        url: "limpieza-sumideros-2.jpeg",
+      },
+      {
+        id: 3,
+        url: "limpieza-sumideros-3.jpeg",
       },
     ],
     faqs: [
@@ -2064,11 +2208,11 @@ export const getServiceById = (id: number): Service | undefined => {
 };
 
 export const getServiceBySlug = (slug: string): Service | undefined => {
-  return ServiciosData.find((service) => service.slug === slug);
+  return ServiciosData.find((service) => service.slug === slug && service.isActive);
 };
 
 export const getServicesByCategory = (category: ServiceType): Service[] => {
-  return ServiciosData.filter((service) => service.category === category);
+  return ServiciosData.filter((service) => service.category === category && service.isActive);
 };
 
 export const getAllServiceCategories = (): ServiceCategories[] => {
@@ -2079,19 +2223,19 @@ export const getAllServiceCategories = (): ServiceCategories[] => {
 };
 
 export const getAllServices = (): Service[] => {
-  return ServiciosData;
+  return ServiciosData.filter((servicio) => servicio.isActive);
 };
 
 export const ProductosData: Product[] = [
   {
     id: 1,
-    slug: "deltametrina-25-ec",
-    name: "Deltametrina 25 EC",
+    slug: "portacebo-roek-101",
+    name: "Portacebo Roek 101",
     description:
-      "Insecticida piretroide de amplio espectro con efecto de derribe y residualidad. Efectivo contra una amplia gama de insectos voladores y rastreros. Ideal para el control de moscas, mosquitos, cucarachas, hormigas y otros insectos en ambientes domésticos, comerciales e industriales.",
+      "Fabricado en polipropileno con protección U.V. posee 3 compartimientos independientes para Cebo en bloque, pellets y contiene una trampa de captura guillotina. De plástico duro accesible para los ratones, evita peligros a niños y animales domésticos y protege el cebo. Cierre, con llave.",
     shortDescription:
-      "Insecticida piretroide de amplio espectro con efecto de derribe y residualidad.",
-    category: "insecticidas",
+      "Fabricado en polipropileno con protección U.V. posee 3 compartimientos independientes para Cebo en bloque, pellets y contiene una trampa de captura guillotina.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2138,11 +2282,11 @@ export const ProductosData: Product[] = [
         aplication: "Aplicación en grietas y hendiduras",
       },
     ],
-    coverImage: "/products/deltametrina.jpg",
+    coverImage: "portacebo-roek-101.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "portacebo-roek-101.jpg",
       },
     ],
     icon: Bug,
@@ -2151,13 +2295,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 2,
-    slug: "cipermetrina-25-ec",
-    name: "Cipermetrina 25 EC",
+    slug: "portacebo-roek-1847",
+    name: "Portacebo Roek-1847P",
     description:
-      "Insecticida piretroide de contacto e ingestión con amplio espectro de acción. Ofrece un excelente control de insectos en fase adulta y larvaria. Su formulación concentrada emulsionable permite una aplicación versátil en diversos ambientes y superficies.",
+      "Cebadero para roedor Roek 1847P. Fabricado en polipropileno con protección UV muy útil para la protección del cebo. Su uso, evita el peligro a niños y animales domésticos. El portacebo se cierra herméticamente con una llave de seguridad y también se puede empotrar muy fácilmente en la pared para evitar su movimiento.",
     shortDescription:
-      "Insecticida piretroide de contacto e ingestión con amplio espectro de acción.",
-    category: "insecticidas",
+      "Cebadero para roedor Roek 1847P. Fabricado en polipropileno con protección UV muy útil para la protección del cebo.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2204,11 +2348,11 @@ export const ProductosData: Product[] = [
         aplication: "Tratamiento perimetral de edificaciones",
       },
     ],
-    coverImage: "/products/cipermetrina.jpg",
+    coverImage: "portacebo-roek-1847.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "portacebo-roek-1847.jpg",
       },
     ],
     icon: Bug,
@@ -2216,13 +2360,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 3,
-    slug: "alfacipermetrina-10-ec",
-    name: "Alfacipermetrina 10 EC",
+    slug: "portacebo-roek-1822",
+    name: "Portacebo Roek 1822",
     description:
-      "Insecticida piretroide de última generación con mayor potencia que la cipermetrina convencional. Proporciona un control efectivo con dosis más bajas, lo que lo hace más económico y ecológico. Ideal para programas de rotación de insecticidas para prevenir resistencias.",
+      "Cebadero para roedor Roek 1822. Fabricado en polipropileno con protección UV muy útil para la protección del cebo. Su uso, evita el peligro a niños y animales domésticos. El portacebo se cierra herméticamente con una llave de seguridad. Fabricado en plástico rígido con soporte para bloques de cebo en varilla. comportamiento hermético en su base hasta una altura: 86.5.",
     shortDescription:
-      "Insecticida piretroide de última generación con mayor potencia que la cipermetrina convencional.",
-    category: "insecticidas",
+      "Cebadero para roedor Roek 1822. Fabricado en polipropileno con protección UV muy útil para la protección del cebo.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2269,11 +2413,11 @@ export const ProductosData: Product[] = [
         aplication: "Control de plagas en industria alimentaria",
       },
     ],
-    coverImage: "/products/alfacipermetrina.jpg",
+    coverImage: "portacebo-roek-1822.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "portacebo-roek-1822.jpg",
       },
     ],
     icon: Bug,
@@ -2282,13 +2426,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 4,
-    slug: "brodifacoum-0025",
-    name: "Brodifacoum 0.025%",
+    slug: "cebadero-raticida-montana",
+    name: "Cebadero Raticida Montana",
     description:
-      "Rodenticida anticoagulante de segunda generación altamente efectivo contra ratas y ratones, incluso resistentes a otros rodenticidas. Su formulación en bloques parafinados lo hace ideal para áreas húmedas o exteriores. Una sola ingesta es suficiente para alcanzar la dosis letal.",
+      "Características:\n\t- Material de polipropileno\n\t- Dimensiones: 34.5 x 22.8 x 8.5 cm\n\t- Color: negro.\n\t- País de origen: China.\nBeneficios:\n\t1. Se colocan en esquinas y a lo largo de paredes por donde viajan los roedores.\n\t2. Posibilidad de fijarse lateralmente o al suelo con tornillos y tarugos.\n\t3. Material resistente a altas temperaturas y golpes.\n\t4. Fácil de lavar y reemplazar los cebos.\n\t5. Se cierra herméticamente y se desbloquea con una llave especial de dos dientes.\n\t6. Para colgar todo tipo de cebos, incluso bloques en barras horizontales y verticales.\n\t7. Bandeja rectangular interior que permite utilizar cebo raticida líquido.",
     shortDescription:
-      "Rodenticida anticoagulante de segunda generación altamente efectivo contra ratas y ratones.",
-    category: "rodenticidas",
+      "Características:\n\t- Material de polipropileno\n\t- Dimensiones: 34.5 x 22.8 x 8.5 cm\n\t- Color: negro.\n\t- País de origen: China.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2335,11 +2479,11 @@ export const ProductosData: Product[] = [
         aplication: "Tratamiento perimetral de edificaciones",
       },
     ],
-    coverImage: "/products/brodifacoum.jpg",
+    coverImage: "cebadero-raticida-montana.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-raticida-montana.jpg",
       },
     ],
     icon: Rat,
@@ -2348,13 +2492,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 5,
-    slug: "bromadiolona-0005",
-    name: "Bromadiolona 0.005%",
+    slug: "cebadero-evo-ambush",
+    name: "Protecta Evo Ambush",
     description:
-      "Rodenticida anticoagulante de segunda generación en formulación de pellets. Ofrece un excelente control de ratas y ratones con una palatabilidad superior. Su acción retardada evita la asociación entre el consumo del cebo y la muerte, previniendo el rechazo del cebo por otros roedores.",
+      "El mantenimiento se simplifica gracias a un mecanismo de bloqueo individual. La limpieza se facilita gracias a la bandeja extraíble Las varillas del bloqueo de cebo no se caen durante la limpieza. Es inviolable: perros y niños están a salvo y puede contener: 4-1 oz. De cebo BLOX en cuatro varillas verticales 1 trampa para ratas marca T-rex Medidas 21x26x10cm 0.64 kg.",
     shortDescription:
-      "Rodenticida anticoagulante de segunda generación en formulación de pellets.",
-    category: "rodenticidas",
+      "El mantenimiento se simplifica gracias a un mecanismo de bloqueo individual.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2401,11 +2545,11 @@ export const ProductosData: Product[] = [
         aplication: "Programas de control integrado",
       },
     ],
-    coverImage: "/products/bromadiolona.jpg",
+    coverImage: "cebadero-evo-ambush.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-evo-ambush.jpg",
       },
     ],
     icon: Rat,
@@ -2413,13 +2557,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 6,
-    slug: "amonio-cuaternario",
-    name: "Amonio Cuaternario",
+    slug: "cebadero-beta",
+    name: "Cebadero Beta",
     description:
-      "Desinfectante de amplio espectro basado en sales de amonio cuaternario de quinta generación. Efectivo contra bacterias, hongos y virus. Su formulación no corrosiva lo hace ideal para superficies delicadas y equipos. Perfecto para la desinfección de áreas críticas en hospitales, industria alimentaria y espacios públicos.",
+      "Ideal para ambientes reducidos, posee doble llave de seguridad, bandeja interior removible para un mejor aseo, varillas de fierro para anclar el cebo y altamente resistente gracias a su protección UV.",
     shortDescription:
-      "Desinfectante de amplio espectro basado en sales de amonio cuaternario de quinta generación.",
-    category: "desinfectantes",
+      "Ideal para ambientes reducidos, posee doble llave de seguridad.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2466,11 +2610,11 @@ export const ProductosData: Product[] = [
         aplication: "Desinfección de equipos médicos",
       },
     ],
-    coverImage: "/products/amonio-cuaternario.jpg",
+    coverImage: "cebadero-beta.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-beta.jpg",
       },
     ],
     icon: Droplets,
@@ -2479,12 +2623,12 @@ export const ProductosData: Product[] = [
   },
   {
     id: 7,
-    slug: "hipoclorito-sodio",
-    name: "Hipoclorito de Sodio 7.5%",
+    slug: "cebadera-bora",
+    name: "Cebadero Bora",
     description:
-      "Desinfectante de alto nivel basado en cloro activo. Proporciona una desinfección rápida y efectiva contra un amplio espectro de microorganismos, incluyendo bacterias, virus y esporas. Ideal para la desinfección de áreas con alta carga microbiana o donde se requiere un nivel de desinfección superior.",
-    shortDescription: "Desinfectante de alto nivel basado en cloro activo.",
-    category: "desinfectantes",
+      "Ideal para establecimientos que requieran un aislamiento total del cebo con el medio ambiente, robusta y de mayor resistencia a caída de agua, posee dos compartimientos de alimentación, llave de seguridad doble, fijadores externos para pared.",
+    shortDescription: "Ideal para establecimientos que requieran un aislamiento total del cebo con el medio ambiente.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2531,11 +2675,11 @@ export const ProductosData: Product[] = [
         aplication: "Eliminación de biofilms",
       },
     ],
-    coverImage: "/products/hipoclorito.jpg",
+    coverImage: "cebadera-bora.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadera-bora.jpg",
       },
     ],
     icon: Droplets,
@@ -2543,12 +2687,12 @@ export const ProductosData: Product[] = [
   },
   {
     id: 8,
-    slug: "alcohol-70",
-    name: "Alcohol 70%",
+    slug: "cebadero-first",
+    name: "Cebadero First",
     description:
       "Solución desinfectante de rápida acción y evaporación. Efectiva contra bacterias, hongos y algunos virus. Su formulación permite una aplicación versátil en diversas superficies sin dejar residuos. Ideal para la desinfección rápida de superficies de contacto frecuente y equipos.",
     shortDescription: "Solución desinfectante de rápida acción y evaporación.",
-    category: "desinfectantes",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2595,11 +2739,11 @@ export const ProductosData: Product[] = [
         aplication: "Aplicación en áreas donde no se puede usar agua",
       },
     ],
-    coverImage: "/products/alcohol.jpg",
+    coverImage: "cebadero-first.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-first.jpg",
       },
     ],
     icon: Droplets,
@@ -2607,13 +2751,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 9,
-    slug: "jabon-antibacterial",
-    name: "Jabón Antibacterial",
+    slug: "cebadero-pilot",
+    name: "Cebadero Pilot",
     description:
-      "Jabón líquido con propiedades antibacterianas para la higiene de manos. Su fórmula suave pero efectiva elimina bacterias y suciedad sin resecar la piel. Ideal para áreas de procesamiento de alimentos, centros de salud y espacios públicos donde la higiene de manos es crítica.",
+      "Cebadero Pilot fuertes y resistentes cumplen las normas sanitarias más exigentes uso en interiores y exteriores posee triple zona de alimentación gran espacio para colocar pegantes para ratas adultas.",
     shortDescription:
-      "Jabón líquido con propiedades antibacterianas para la higiene de manos.",
-    category: "sanitizantes",
+      "Cebadero Pilot fuertes y resistentes cumplen las normas sanitarias",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2660,11 +2804,11 @@ export const ProductosData: Product[] = [
         aplication: "Instalaciones de procesamiento de alimentos",
       },
     ],
-    coverImage: "/products/jabon-antibacterial.jpg",
+    coverImage: "cebadero-pilot.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-pilot.jpg",
       },
     ],
     icon: Shield,
@@ -2672,12 +2816,12 @@ export const ProductosData: Product[] = [
   },
   {
     id: 10,
-    slug: "gel-antibacterial",
-    name: "Gel Antibacterial",
+    slug: "cebadero-rock",
+    name: "Cebadero Rock",
     description:
-      "Gel desinfectante para manos sin enjuague. Su fórmula con alcohol al 70% elimina eficazmente bacterias y algunos virus. Contiene emolientes que protegen la piel del resecamiento incluso con uso frecuente. Ideal para situaciones donde no se dispone de agua y jabón.",
-    shortDescription: "Gel desinfectante para manos sin enjuague.",
-    category: "sanitizantes",
+      "Protección de ingredientes tóxicos sobre niños y animales. protección del cebo químico de las lluvias. características: ideal para uso en jardines o áreas abiertas, con estaca para clavar en el suelo y llave de seguridad, exclusivo para cebo químico.",
+    shortDescription: "Protección de ingredientes tóxicos sobre niños y animales.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2724,11 +2868,11 @@ export const ProductosData: Product[] = [
         aplication: "Complemento de higiene de manos",
       },
     ],
-    coverImage: "/products/gel-antibacterial.jpg",
+    coverImage: "cebadero-rock.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-rock.jpg",
       },
     ],
     icon: Shield,
@@ -2737,13 +2881,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 11,
-    slug: "repelente-aves",
-    name: "Repelente para Aves",
+    slug: "bebedero-para-roedores",
+    name: "Bebedero para roedor",
     description:
-      "Gel repelente no tóxico que crea una superficie incómoda para las aves sin causarles daño. Su formulación resistente a la intemperie proporciona una protección duradera contra la percha y anidación de aves. Ideal para cornisas, letreros, equipos exteriores y otras áreas afectadas por aves urbanas.",
+      "Bebedero para roedores de plástico con capacidad de 1/2 o de 1 litro contenedor de agua para roedores, utilizable cuando existe fuente de alimento y poco acceso a líquidos.",
     shortDescription:
-      "Gel repelente no tóxico que crea una superficie incómoda para las aves sin causarles daño.",
-    category: "repelentes",
+      "Bebedero para roedores de plástico con capacidad de 1/2 o de 1 litro",
+    category: "equipos",
     price: "Consultar",
     features: [
       {
@@ -2790,11 +2934,11 @@ export const ProductosData: Product[] = [
         aplication: "Áreas de anidación",
       },
     ],
-    coverImage: "/products/repelente-aves.jpg",
+    coverImage: "bebedero-para-roedores.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "bebedero-para-roedores.jpg",
       },
     ],
     icon: Bird,
@@ -2802,13 +2946,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 12,
-    slug: "repelente-roedores",
-    name: "Repelente Ultrasónico para Roedores",
+    slug: "cebadero-para-moscas",
+    name: "Cebadero para moscas",
     description:
-      "Dispositivo electrónico que emite ondas ultrasónicas variables que perturban y ahuyentan a roedores. Proporciona una solución no letal y ecológica para áreas donde no se desea usar rodenticidas. Ideal para hogares con niños y mascotas, o áreas sensibles donde los métodos químicos no son apropiados.",
+      "Dispositivo para el control de moscas. Cebadero para la colocación de insecticidas neonicotinoides en presentación de cebos granulados o similares.",
     shortDescription:
-      "Dispositivo electrónico que emite ondas ultrasónicas variables que perturban y ahuyentan a roedores.",
-    category: "repelentes",
+      "Dispositivo para el control de moscas.",
+    category: "trampas",
     price: "Consultar",
     features: [
       {
@@ -2855,11 +2999,11 @@ export const ProductosData: Product[] = [
         aplication: "Áreas sensibles a químicos",
       },
     ],
-    coverImage: "/products/repelente-ultrasonico.jpg",
+    coverImage: "cebadero-para-moscas.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "cebadero-para-moscas.jpg",
       },
     ],
     icon: Zap,
@@ -2867,13 +3011,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 13,
-    slug: "trampa-adhesiva-roedores",
-    name: "Trampa Adhesiva para Roedores",
+    slug: "portagel-forex",
+    name: "Portagel Forex",
     description:
-      "Trampa con adhesivo de alta potencia para la captura de roedores. Su diseño plano y discreto permite colocarla en espacios estrechos donde los roedores transitan. Ideal para el monitoreo de actividad de roedores o como parte de un programa integrado de control en áreas donde no se desea usar rodenticidas.",
+      "Para protección de gel foval, para mayor duración y efectividad.\nCaracterísticas:\n\t– Material de Plástico\n\t– Medida 15 x 40 mm.",
     shortDescription:
-      "Trampa con adhesivo de alta potencia para la captura de roedores.",
-    category: "trampas",
+      "Para protección de gel foval, para mayor duración y efectividad.",
+    category: "equipos",
     price: "Consultar",
     features: [
       {
@@ -2920,11 +3064,11 @@ export const ProductosData: Product[] = [
         aplication: "Identificación de especies",
       },
     ],
-    coverImage: "/products/trampa-adhesiva.jpg",
+    coverImage: "portagel-forex.jpg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "portagel-forex.jpg",
       },
     ],
     icon: Rat,
@@ -2932,13 +3076,13 @@ export const ProductosData: Product[] = [
   },
   {
     id: 14,
-    slug: "trampa-luz-uv",
-    name: "Trampa de Luz UV para Insectos",
+    slug: "platinum",
+    name: "Platinum",
     description:
-      "Dispositivo de captura de insectos voladores mediante luz ultravioleta y placa adhesiva. Su diseño elegante y discreto lo hace ideal para áreas comerciales y de atención al público. Proporciona un control efectivo y silencioso de moscas, mosquitos y otros insectos voladores sin productos químicos.",
+      "Gel insecticida / cucarachicida con adherencia a distintas superficies. Puede ser usado en establecimientos en funcionamiento. Producto autorizado por el MINSA.",
     shortDescription:
-      "Dispositivo de captura de insectos voladores mediante luz ultravioleta y placa adhesiva.",
-    category: "trampas",
+      "Gel insecticida / cucarachicida",
+    category: "insumos",
     price: "Consultar",
     features: [
       {
@@ -2985,11 +3129,11 @@ export const ProductosData: Product[] = [
         aplication: "Hospitales y centros de salud",
       },
     ],
-    coverImage: "/products/trampa-luz-uv.jpg",
+    coverImage: "platinum.jpeg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "platinum.jpeg",
       },
     ],
     icon: Bug,
@@ -2998,12 +3142,12 @@ export const ProductosData: Product[] = [
   },
   {
     id: 15,
-    slug: "nebulizador-ulv",
-    name: "Nebulizador ULV Eléctrico",
+    slug: "trampa-tomahawk",
+    name: "Trampa Tomahawk",
     description:
-      "Equipo de nebulización de ultra bajo volumen (ULV) para la aplicación de insecticidas, desinfectantes y sanitizantes. Genera microgotas de 5-50 micras que permanecen suspendidas en el aire, alcanzando áreas de difícil acceso. Ideal para la desinfección de grandes espacios y el control de insectos voladores.",
+      "Accesorio para ser usado en el control de roedores en Salud Pública, Saneamiento Ambiental e Industria en general. Diseño y fabricado en Malla galvanizada.",
     shortDescription:
-      "Equipo de nebulización de ultra bajo volumen (ULV) para la aplicación de insecticidas y desinfectantes.",
+      "Accesorio para ser usado en el control de roedores en Salud Pública",
     category: "equipos",
     price: "Consultar",
     features: [
@@ -3051,11 +3195,11 @@ export const ProductosData: Product[] = [
         aplication: "Tratamientos de choque",
       },
     ],
-    coverImage: "/products/nebulizador-ulv.jpg",
+    coverImage: "trampa-tomahawk.jpeg",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "trampa-tomahawk.jpeg",
       },
     ],
     icon: SprayCan,
@@ -3064,137 +3208,154 @@ export const ProductosData: Product[] = [
   },
   {
     id: 16,
-    slug: "pulverizador-manual",
-    name: "Pulverizador Manual de Presión Previa",
-    description:
-      "Equipo portátil para la aplicación de insecticidas, herbicidas y desinfectantes. Su sistema de presión previa permite una aplicación constante y controlada. Fabricado con materiales resistentes a productos químicos para una mayor durabilidad. Ideal para tratamientos localizados y de precisión.",
-    shortDescription:
-      "Equipo portátil para la aplicación de insecticidas, herbicidas y desinfectantes.",
-    category: "equipos",
+    slug: "precision-health",
+    name: "Precision Health",
+    description: "Es un potente insecticida no sistémico con contacto y acción estomacal. Modulador de canal de sodio; penetra con facilidad el esqueleto externo, circulando con la hemolinfa hasta estacionarse en los axones neuronales, actuando sobre la bomba de sodio, abriéndolos y produciendo su despolarización anormal y letal.",
+    shortDescription: "Es un potente insecticida no sistémico con contacto y acción estomacal.",
+    category: "insumos",
     price: "Consultar",
     features: [
       {
         id: 1,
-        title: "Tanque de 5-8 litros",
-        description: "",
+        title: "Concentrado Emulsionable",
+        description: ""
       },
       {
         id: 2,
-        title: "Válvula de seguridad",
-        description: "",
+        title: "Insecticida de uso Doméstico, Industrial y Salud Pública",
+        description: ""
       },
       {
         id: 3,
-        title: "Boquilla ajustable",
-        description: "",
-      },
-      {
-        id: 4,
-        title: "Correa para transporte",
-        description: "",
-      },
-      {
-        id: 5,
-        title: "Resistente a productos químicos",
-        description: "",
-      },
+        title: "Grupo químico Piretroide",
+        description: ""
+      }
     ],
     applications: [
       {
         id: 1,
-        aplication: "Tratamientos localizados",
+        aplication: "En equipo aspersor, usar 5 ml de PRECISION HEALTH por cada litro de agua."
       },
       {
         id: 2,
-        aplication: "Aplicación en grietas y hendiduras",
+        aplication: "En mochila a motor, usar 20 ml de PRECISION HEALTH por cada litro de agua."
       },
       {
         id: 3,
-        aplication: "Tratamientos de perímetro",
-      },
-      {
-        id: 4,
-        aplication: "Desinfección de superficies",
+        aplication: "Para termonebulizadores, usar de 20 ml de PRECISION HEALTH por litro de solvente (agua, diésel, o aceite vegetal)."
       },
     ],
-    coverImage: "/products/pulverizador-manual.jpg",
+    coverImage: "precision-health.png",
     gallery: [
       {
         id: 1,
-        url: "",
-      },
+        url: "precision-health.png"
+      }
     ],
     icon: SprayCan,
     stock: "disponible",
+    isFeatured: true
   },
   {
     id: 17,
-    slug: "termonebulizador",
-    name: "Termonebulizador",
-    description:
-      "Equipo que genera niebla térmica para la aplicación de insecticidas y desinfectantes. Produce microgotas de 1-50 micras mediante calor, creando una densa niebla que penetra en áreas de difícil acceso. Ideal para tratamientos de choque en grandes espacios, control de mosquitos en exteriores y desinfección de áreas extensas.",
-    shortDescription:
-      "Equipo que genera niebla térmica para la aplicación de insecticidas y desinfectantes.",
-    category: "equipos",
+    slug: "bomba-max",
+    name: "Bomba Max",
+    description: "Es un novedoso insecticida formulado como concentrado emulsionable a partir de la mezcla de dos ingredientes activos, la Alfacipermetrina, piretroide de última generación y el Piriproxyfen, insecticida regulador de crecimiento que controla selectivamente los estadios inmaduros de la plagas.",
+    shortDescription: "Es un novedoso insecticida concentrado emulsionable",
+    category: "insumos",
     price: "Consultar",
     features: [
       {
         id: 1,
-        title: "Motor de combustión potente",
-        description: "",
+        title: "Líquido traslúcido",
+        description: ""
       },
       {
         id: 2,
-        title: "Tanque de solución de 5 litros",
-        description: "",
+        title: "Incompatible con sustancias alcalinas",
+        description: ""
       },
       {
         id: 3,
-        title: "Alcance hasta 30 metros",
-        description: "",
+        title: "Se comercializará en envases de polietileno Terftalato (PET) con tapón sello trilaminado de 3 capas",
+        description: ""
       },
       {
         id: 4,
-        title: "Tamaño de gota 1-50 micras",
-        description: "",
-      },
-      {
-        id: 5,
-        title: "Portátil y de fácil manejo",
-        description: "",
+        title: "Presentaciones de 250 ml y 1 Litro",
+        description: ""
       },
     ],
     applications: [
       {
         id: 1,
-        aplication: "Control de mosquitos en exteriores",
+        aplication: "Motomochila aplica 20-25 ML/ agua o diesel"
       },
       {
         id: 2,
-        aplication: "Tratamientos de choque",
-      },
-      {
-        id: 3,
-        aplication: "Desinfección de grandes espacios",
-      },
-      {
-        id: 4,
-        aplication: "Aplicación en áreas de difícil acceso",
-      },
-      "Control de mosquitos en exteriores",
-      "Tratamientos de choque",
-      "Desinfección de grandes espacios",
-      "Aplicación en áreas de difícil acceso",
+        aplication: "Aspersor aplica 10 ML / agua."
+      }
     ],
-    coverImage: "/products/termonebulizador.jpg",
+    coverImage: "bomba-max-1.png",
     gallery: [
       {
         id: 1,
-        url: "",
+        url: "bomba-max-1.png"
+      }
+    ],
+    icon: SprayCan,
+    stock: "disponible",
+    isFeatured: true
+  },
+  {
+    id: 18,
+    slug: "cipervox-ec",
+    name: "Cipervox EC",
+    description: "Es un poderoso insecticida formulado en emulsionable concentrado que combina dos poderosos ingredientes activos de distintos grupos químicos y mecanismos de acción. Se puede aplicar en ductos, elevadores, líneas de transportes, plantas de alimentos, almacenes en general y bodegas planas.",
+    shortDescription: "Es un poderoso insecticida formulado en emulsionable concentrado.",
+    category: "insumos",
+    price: "Consultar",
+    features: [
+      {
+        id: 1,
+        title: "Concentrado Emulsionable",
+        description: ""
+      },
+      {
+        id: 2,
+        title: "Grupo químico: piretroide + organofosforado",
+        description: ""
+      },
+      {
+        id: 3,
+        title: "Evite el contacto con la piel y ojos",
+        description: ""
+      }
+    ],
+    applications: [
+      {
+        id: 1,
+        aplication: "Cipervox 10ml + 1000ml de agua en moscas, cucarachas y mosquitos."
+      },
+      {
+        id: 2,
+        aplication: "Tóxico para contacto, ingestión e inhalación con hombres y animales."
+      },
+      {
+        id: 3,
+        aplication: "Aplica en uso de equipos aspersores, pulveerizadores y atomizadores."
       },
     ],
-    icon: Flame,
+    coverImage: "cipervox-ec.jpeg",
+    gallery: [
+      {
+        id: 1,
+        url: "cipervox-ec.jpeg"
+      }
+    ],
+    icon: SprayCan,
     stock: "disponible",
+    isFeatured: true
   },
 ];
 
@@ -3212,13 +3373,9 @@ export const getProductsByCategory = (category: ProductCategory): Product[] => {
 
 export const getAllProductCategories = (): ProductCategories[] => {
   return [
-    { key: "insecticidas", label: "Insecticidas" },
-    { key: "rodenticidas", label: "Rodenticidas" },
-    { key: "desinfectantes", label: "Desinfectantes" },
-    { key: "sanitizantes", label: "Sanitizantes" },
-    { key: "repelentes", label: "Repelentes" },
     { key: "trampas", label: "Trampas" },
     { key: "equipos", label: "Equipos" },
+    { key: "insumos", label: "Insumos" },
   ];
 };
 

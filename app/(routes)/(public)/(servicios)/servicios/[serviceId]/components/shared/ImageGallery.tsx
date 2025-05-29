@@ -32,12 +32,12 @@ export function ImageGallery({ slug, title, galleryImages }: Partial<Service>) {
           </motion.div>
         </AnimatePresence>
       </div>
-      <div className="flex space-x-2 overflow-x-auto pb-2">
+      <div className="flex space-x-2 overflow-x-auto pb-4">
         {galleryImages!.map((image, index) => (
           <button
-            key={index}
+            key={image.id}
             onClick={() => setSelectedImage(index)}
-            className={`relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-md transition-all ${
+            className={`relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-md transition-all cursor-pointer ${
               selectedImage === index
                 ? "ring-2 ring-blueAmbiente ring-offset-2"
                 : "opacity-70 hover:opacity-100"
