@@ -62,7 +62,7 @@ export function BannerCarrusel() {
                 >
                   <div className="relative w-full max-w-md h-[400px]">
                     <Image
-                      src="/images/banners/banner-desinfeccion1.png"
+                      src="/images/banners/banner-equipos.jpeg"
                       alt="Servicios de desinfección"
                       fill
                       className="object-cover rounded-lg shadow-xl"
@@ -88,7 +88,7 @@ export function BannerCarrusel() {
                 >
                   <div className="relative w-full max-w-md h-[400px]">
                     <Image
-                      src="/images/banners/banner-desinfeccion2.png"
+                      src="/images/banners/banner-equipo3.jpg"
                       alt="Servicios de Fumigacion profesional"
                       fill
                       className="object-cover rounded-lg shadow-xl"
@@ -158,7 +158,7 @@ export function BannerCarrusel() {
                     >
                       <div className="relative w-full max-w-md h-[400px]">
                         <Image
-                          src="/images/banners/desinsectacion-7.jpeg"
+                          src="/images/banners/banner-equipo.jpg"
                           alt="Equipos profesionales de saneamiento"
                           fill
                           className="object-cover rounded-lg shadow-xl"

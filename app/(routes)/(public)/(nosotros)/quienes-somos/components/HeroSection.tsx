@@ -6,12 +6,12 @@ import {motion} from 'framer-motion'
 export function HeroSection() {
   return (
     <section className="relative">
-        <div className="relative h-[40vh] md:h-[50vh] w-full">
+        <div className="relative h-[50vh] md:h-[70vh] w-full">
             <Image
-                src='/images/services/desinsectacion/desinsectacion-2.jpeg'
+                src='/images/banners/banner-equipo4.jpg'
                 alt="ProAmbiente - Quiénes Somos"
                 fill
-                className="object-cover brightness-50"
+                className="object-cover brightness-40"
                 priority
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
