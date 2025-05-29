@@ -18,7 +18,7 @@ export function CounterItem({
         } ${lineRightMobile && "border-e-white"}`}
       >
         <p className="flex mb-2 text-2xl font-extrabold md:text-4xl text-white">
-          + <CountUp end={end} start={0} duration={2.5} startOnMount />
+          + <CountUp end={end} start={0} duration={2.5} startOnMount enableScrollSpy/>
         </p>
         <p className="uppercase max-w-[100px]">{label}</p>
       </div>
