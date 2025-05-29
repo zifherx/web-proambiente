@@ -294,7 +294,7 @@ export const ClientesData: ClientesProp[] = [
   {
     id: 17,
     name: "San Jacinto",
-    slug: "logo-la-lucha",
+    slug: "logo-san-jacinto",
     ext: "jpg",
   },
   {
@@ -313,6 +313,30 @@ export const ClientesData: ClientesProp[] = [
     id: 20,
     name: "Vitas",
     slug: "logo-vitas",
+    ext: "jpg",
+  },
+  {
+    id: 21,
+    name: "Koi Maki Bar",
+    slug: "logo-koi-maki",
+    ext: "png",
+  },
+  {
+    id: 22,
+    name: "Sociedad Automotores Inka SAC",
+    slug: "logo-sai",
+    ext: "png",
+  },
+  {
+    id: 23,
+    name: "Rincon de Vallejo",
+    slug: "logo-rincon-vallejo",
+    ext: "jpg",
+  },
+  {
+    id: 24,
+    name: "Pizzeria San Remo",
+    slug: "logo-san-remo",
     ext: "jpg",
   },
 ];
@@ -372,10 +396,10 @@ export const StepProcessDiagram: IProcessDiagram[] = [
   {
     id: 3,
     key: "erp",
-    title: "ERP Ruppiest",
+    title: "ERP",
     icon: Database,
     description:
-      "Implementamos el innovador sistema ERP Ruppiest que nos permite optimizar procesos, mejorar la gestión de recursos y ofrecer un servicio más eficiente a nuestros clientes.",
+      "Implementamos el innovador sistema ERP que nos permite optimizar procesos, mejorar la gestión de recursos y ofrecer un servicio más eficiente a nuestros clientes.",
     position: {
       x: "90%",
       y: "20%",
@@ -399,7 +423,7 @@ export const StepProcessDiagram: IProcessDiagram[] = [
     title: "Aplicación Móvil",
     icon: Smartphone,
     description:
-      "Nuestros técnicos utilizan una aplicación móvil conectada al ERP Ruppiest para registrar cada servicio, documentar con fotografias y generar informes detallados para nuestros clientes.",
+      "Nuestros técnicos utilizan una aplicación móvil conectada al ERP para registrar cada servicio, documentar con fotografias y generar informes detallados para nuestros clientes.",
     position: {
       x: "50%",
       y: "90%",
@@ -491,9 +515,9 @@ export const ServiciosData: Service[] = [
     slug: "desratizacion",
     title: "Desratización",
     isActive: true,
-    shortDescription: "Control y eliminación de roedores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Control y eliminación de roedores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
-      "Nuestro servicio de desratización está diseñado para eliminar de manera efectiva y segura las infestaciones de roedores en hogares, empresas e industrias. Utilizamos métodos avanzados y productos certificados que garantizan resultados duraderos sin comprometer la seguridad de las personas, mascotas o el medio ambiente.",
+      "Nuestro servicio de desratización está diseñado para eliminar de manera efectiva y segura las infestaciones de roedores en hogares, empresas e industrias. Utilizamos métodos avanzados y productos certificados que garantizan resultados duraderos sin comprometer la seguridad de las personas, mascotas o el medio ambiente. Servicio integrado con nuestro ERP, para un monitoreo de la trazabilidad en tiempo real para cumplir futuras auditorias.",
     category: "saneamiento",
     icon: Rat,
     features: [
@@ -575,6 +599,10 @@ export const ServiciosData: Service[] = [
         id: 5,
         title: "Ambiente más saludable y seguro",
       },
+      {
+        id: 6,
+        title: "Monitoreo y trazabilidad en tiempo real",
+      }
     ],
     coverImage: "desratizacion-2.jpg",
     galleryImages: [
@@ -627,7 +655,7 @@ export const ServiciosData: Service[] = [
     slug: "desinsectacion",
     title: "Desinsectación",
     isActive: true,
-    shortDescription: "Control y eliminación de insectos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Control y eliminación de insectos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desinsectación combate eficazmente todo tipo de insectos plaga como cucarachas, hormigas, moscas, mosquitos, pulgas y otros. Utilizamos técnicas avanzadas y productos biodegradables que eliminan las plagas existentes y previenen futuras infestaciones, garantizando espacios libres de insectos.",
     category: "saneamiento",
@@ -770,7 +798,7 @@ export const ServiciosData: Service[] = [
     slug: "desinfeccion",
     title: "Desinfección",
     isActive: true,
-    shortDescription: "Eliminación de microorganismos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Eliminación de microorganismos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desinfección elimina virus, bacterias, hongos y otros microorganismos patógenos de superficies y ambientes. Utilizamos desinfectantes de amplio espectro y equipos de última generación para garantizar la higienización completa de espacios residenciales, comerciales e industriales, creando entornos más saludables y seguros.",
     category: "saneamiento",
@@ -915,10 +943,10 @@ export const ServiciosData: Service[] = [
   },
   {
     id: 4,
-    slug: "limpieza-oficinas",
-    title: "Limpieza de Oficinas",
+    slug: "limpieza-ambientes",
+    title: "Limpieza de Ambientes",
     isActive: true,
-    shortDescription: "Servicio profesional para empresas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Servicio profesional para empresas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos un servicio integral de limpieza y mantenimiento para oficinas y espacios de trabajo. Nuestro equipo profesional se encarga de mantener impecables todas las áreas, desde escritorios y salas de reuniones hasta baños y áreas comunes, utilizando productos y técnicas que garantizan un ambiente laboral limpio, ordenado y saludable.",
     category: "auxiliares",
@@ -1003,25 +1031,57 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas de higiene y seguridad laboral",
       },
     ],
-    coverImage: "limpieza-oficinas-3.jpeg",
+    coverImage: "limpieza-ambientes-3.jpeg",
     galleryImages: [
       {
         id: 1,
-        url: "limpieza-oficinas-1.jpeg",
+        url: "limpieza-ambientes-1.jpeg",
       },
       {
         id: 2,
-        url: "limpieza-oficinas-2.jpeg",
+        url: "limpieza-ambientes-2.jpeg",
       },
       {
         id: 3,
-        url: "limpieza-oficinas-3.jpeg",
+        url: "limpieza-ambientes-3.jpeg",
       },
+      {
+        id: 4,
+        url: "limpieza-ambientes-4.jpeg",
+      },
+      {
+        id: 5,
+        url: "limpieza-ambientes-5.jpeg",
+      },
+      {
+        id: 6,
+        url: "limpieza-ambientes-6.jpeg",
+      },
+      {
+        id: 7,
+        url: "limpieza-ambientes-7.jpeg",
+      },
+      {
+        id: 8,
+        url: "limpieza-ambientes-8.jpeg",
+      },
+      {
+        id: 9,
+        url: "limpieza-ambientes-9.jpeg",
+      },
+      {
+        id: 10,
+        url: "limpieza-ambientes-10.jpeg",
+      },
+      {
+        id: 11,
+        url: "limpieza-ambientes-11.jpeg",
+      }
     ],
     faqs: [
       {
         id: 1,
-        question: "¿Qué incluye el servicio de limpieza de oficinas?",
+        question: "¿Qué incluye el servicio de limpieza de ambientes?",
         answer:
           "Incluye limpieza de pisos, mobiliario, equipos, baños, cocinas, salas de reuniones, recepción y áreas comunes. También ofrecemos servicios adicionales como limpieza de vidrios, alfombras y desinfección profunda.",
       },
@@ -1037,170 +1097,33 @@ export const ServiciosData: Service[] = [
         answer:
           "Sí, nosotros proporcionamos todos los productos, materiales y equipos necesarios para realizar un servicio profesional y completo.",
       },
-    ],
-    delay: 0.4,
-  },
-  {
-    id: 5,
-    slug: "limpieza-fachadas",
-    title: "Limpieza de Fachadas",
-    isActive: true,
-    shortDescription: "Restauración de imagen exterior.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
-    fullDescription:
-      "Nuestro servicio especializado de limpieza de fachadas devuelve el aspecto original a los exteriores de edificios y negocios. Eliminamos suciedad, polvo, contaminación, grafitis y manchas utilizando técnicas específicas para cada tipo de superficie, ya sea vidrio, concreto, ladrillo, metal o piedra, mejorando significativamente la apariencia e imagen de su propiedad.",
-    category: "auxiliares",
-    icon: Building2,
-    features: [
-      {
-        id: 1,
-        title: "Limpieza especializada",
-        description:
-          "Técnicas adaptadas a cada tipo de material y superficie para resultados óptimos.",
-      },
-      {
-        id: 2,
-        title: "Equipos profesionales",
-        description:
-          "Utilizamos hidrolavadoras, plataformas elevadoras y herramientas especializadas.",
-      },
-      {
-        id: 3,
-        title: "Productos no abrasivos",
-        description:
-          "Empleamos limpiadores que eliminan la suciedad sin dañar los materiales de la fachada.",
-      },
       {
         id: 4,
-        title: "Tratamientos protectores",
-        description:
-          "Aplicamos selladores y protectores que prolongan la limpieza y protegen la superficie.",
-      },
-    ],
-    process: [
-      {
-        id: 1,
-        title: "Inspección",
-        description:
-          "Evaluación del tipo de superficie, nivel de suciedad y accesibilidad.",
-      },
-      {
-        id: 2,
-        title: "Planificación",
-        description:
-          "Selección de técnicas, productos y equipos adecuados para cada caso.",
-      },
-      {
-        id: 3,
-        title: "Preparación",
-        description:
-          "Protección de áreas adyacentes y elementos que no deben ser mojados o limpiados.",
-      },
-      {
-        id: 4,
-        title: "Limpieza",
-        description:
-          "Aplicación de productos y técnicas de limpieza según el plan establecido.",
-      },
-      {
-        id: 5,
-        title: "Protección",
-        description:
-          "Aplicación opcional de tratamientos protectores para prolongar los resultados.",
-      },
-    ],
-    benefits: [
-      {
-        id: 1,
-        title: "Mejora significativa de la imagen exterior",
-      },
-      {
-        id: 2,
-        title: "Aumento del valor percibido de la propiedad",
-      },
-      {
-        id: 3,
-        title: "Prevención del deterioro de materiales",
-      },
-      {
-        id: 4,
-        title: "Eliminación de agentes contaminantes",
-      },
-      {
-        id: 5,
-        title: "Mayor durabilidad de la fachada",
-      },
-    ],
-    coverImage: "limpieza-fachadas-12.jpeg",
-    galleryImages: [
-      {
-        id: 1,
-        url: "limpieza-fachadas-1.jpeg",
-      },
-      {
-        id: 2,
-        url: "limpieza-fachadas-3.jpeg",
-      },
-      {
-        id: 3,
-        url: "limpieza-fachadas-4.jpeg",
-      },
-      {
-        id: 4,
-        url: "limpieza-fachadas-5.jpeg",
-      },
-      {
-        id: 5,
-        url: "limpieza-fachadas-6.jpeg",
-      },
-      {
-        id: 6,
-        url: "limpieza-fachadas-7.jpeg",
-      },
-      {
-        id: 7,
-        url: "limpieza-fachadas-8.jpeg",
-      },
-      {
-        id: 8,
-        url: "limpieza-fachadas-9.jpeg",
-      },
-      {
-        id: 9,
-        url: "limpieza-fachadas-10.jpeg",
-      },
-      {
-        id: 10,
-        url: "limpieza-fachadas-11.jpeg",
-      },
-    ],
-    faqs: [
-      {
-        id: 1,
         question: "¿La limpieza de fachadas puede dañar los materiales?",
         answer:
           "No cuando se realiza correctamente. Utilizamos técnicas y productos específicos para cada tipo de material, ajustando la presión y temperatura del agua para evitar daños.",
       },
       {
-        id: 2,
+        id: 5,
         question: "¿Cuánto tiempo toma limpiar una fachada?",
         answer:
           "Depende del tamaño, altura, accesibilidad y nivel de suciedad. Una fachada pequeña puede tomar 1 día, mientras que edificios grandes pueden requerir varios días.",
       },
       {
-        id: 3,
+        id: 6,
         question: "¿Con qué frecuencia se debe limpiar una fachada?",
         answer:
           "Recomendamos una limpieza profesional anual o bianual, dependiendo de la exposición a contaminación, clima y tipo de superficie.",
       },
     ],
-    delay: 0.5,
+    delay: 0.4,
   },
   {
     id: 6,
     slug: "limpieza-tanques",
     title: "Limpieza de Tanques",
     isActive: true,
-    shortDescription: "Mantenimiento de cisternas y reservorios.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Mantenimiento de cisternas y reservorios.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de limpieza y desinfección de tanques de agua garantiza que su suministro de agua se mantenga limpio y seguro. Eliminamos sedimentos, algas, bacterias y otros contaminantes que pueden acumularse en cisternas y reservorios, cumpliendo con todas las normativas sanitarias vigentes y proporcionando certificados de limpieza.",
     category: "auxiliares",
@@ -1361,10 +1284,10 @@ export const ServiciosData: Service[] = [
     slug: "control-aviar",
     title: "Control Aviar",
     isActive: true,
-    shortDescription: "Soluciones para el control de aves.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Soluciones para el control de aves.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos soluciones efectivas y humanitarias para el control de aves en edificios y estructuras. Implementamos sistemas que impiden la anidación y percha de aves sin causarles daño, protegiendo su propiedad de los problemas asociados con la presencia de aves como palomas, gaviotas y otras especies urbanas.",
-    category: "auxiliares",
+    category: "saneamiento",
     icon: Bird,
     features: [
       {
@@ -1488,7 +1411,7 @@ export const ServiciosData: Service[] = [
     slug: "lamparas-insectocutoras",
     title: "Lámparas Insectocutoras",
     isActive: false,
-    shortDescription: "Control de insectos voladores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Control de insectos voladores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Instalamos y mantenemos lámparas insectocutoras de alta eficiencia para el control de insectos voladores en interiores. Estos dispositivos atraen y eliminan moscas, mosquitos, polillas y otros insectos voladores de manera higiénica y discreta, siendo ideales para restaurantes, cocinas industriales, áreas de procesamiento de alimentos y otros espacios donde la presencia de insectos es inaceptable.",
     category: "auxiliares",
@@ -1608,9 +1531,9 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-campanas",
     title: "Limpieza de Campanas.",
     isActive: true,
-    shortDescription: "Mantenimiento de campanas extractoras.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Mantenimiento de campanas extractoras.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
-      "Nuestro servicio especializado de limpieza de campanas extractoras y sistemas de ventilación elimina la acumulación de grasa y residuos en cocinas comerciales e industriales. Este mantenimiento es crucial para prevenir incendios, mejorar la eficiencia de los equipos, cumplir con normativas de seguridad y mantener un ambiente de trabajo saludable.",
+      "Nuestro servicio especializado de limpieza de ductos y campanas y sistemas de extracción eliminando la acumulación de grasa y residuos en cocinas comerciales e industriales. Este mantenimiento es crucial para prevenir incendios, mejorar la eficiencia de los equipos, cumplir con normativas de seguridad y mantener un ambiente de trabajo saludable.",
     category: "auxiliares",
     icon: Utensils,
     features: [
@@ -1703,6 +1626,42 @@ export const ServiciosData: Service[] = [
         id: 2,
         url: "limpieza-campanas-2.jpg",
       },
+      {
+        id: 3,
+        url: "limpieza-campanas-3.jpg",
+      },
+      {
+        id: 4,
+        url: "limpieza-campanas-4.jpg",
+      },
+      {
+        id: 5,
+        url: "limpieza-campanas-5.jpg",
+      },
+      {
+        id: 6,
+        url: "limpieza-campanas-6.jpg",
+      },
+      {
+        id: 7,
+        url: "limpieza-campanas-7.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-campanas-8.jpg",
+      },
+      {
+        id: 9,
+        url: "limpieza-campanas-9.jpg",
+      },
+      {
+        id: 10,
+        url: "limpieza-campanas-10.jpg",
+      },
+      {
+        id: 11,
+        url: "limpieza-campanas-11.jpg",
+      }
     ],
     faqs: [
       {
@@ -1732,10 +1691,10 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-pozos-septicos",
     title: "Limpieza de Pozos Sépticos",
     isActive: true,
-    shortDescription: "Mantenimiento preventivo y correctivo.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Mantenimiento preventivo y correctivo.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos un servicio completo de limpieza, mantenimiento y desatoro de pozos sépticos, cajas de registro y sistemas de drenaje. Utilizamos equipos de succión al vacío y técnicas especializadas para eliminar lodos, sedimentos y obstrucciones, previniendo desbordamientos, malos olores y problemas sanitarios.",
-    category: "auxiliares",
+    category: "saneamiento",
     icon: Trash2,
     features: [
       {
@@ -1856,10 +1815,10 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-trampas-grasa",
     title: "Limpieza de Trampas de Grasa.",
     isActive: true,
-    shortDescription: "Mantenimiento para restaurantes y cocinas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Mantenimiento para restaurantes y cocinas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza de trampas de grasa previene obstrucciones en sistemas de drenaje de restaurantes y cocinas industriales. Removemos la acumulación de grasas, aceites y sólidos que pueden causar bloqueos, malos olores y problemas con las autoridades sanitarias, ayudando a mantener sus instalaciones funcionando correctamente.",
-    category: "auxiliares",
+    category: "saneamiento",
     icon: Pipette,
     features: [
       {
@@ -1940,20 +1899,36 @@ export const ServiciosData: Service[] = [
         title: "Prolongación de la vida útil del sistema de drenaje",
       },
     ],
-    coverImage: "limpieza-trampas-grasa-3.jpeg",
+    coverImage: "limpieza-trampas-grasa-3.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "limpieza-trampas-grasa-1.jpeg",
+        url: "limpieza-trampas-grasa-1.jpg",
       },
       {
         id: 2,
-        url: "limpieza-trampas-grasa-2.jpeg",
+        url: "limpieza-trampas-grasa-2.jpg",
       },
       {
         id: 3,
-        url: "limpieza-trampas-grasa-3.jpeg",
+        url: "limpieza-trampas-grasa-3.jpg",
       },
+      {
+        id: 4,
+        url: "limpieza-trampas-grasa-4.jpg",
+      },
+      {
+        id: 5,
+        url: "limpieza-trampas-grasa-5.jpg",
+      },
+      {
+        id: 6,
+        url: "limpieza-trampas-grasa-6.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-trampas-grasa-8.jpg",
+      }
     ],
     faqs: [
       {
@@ -1983,7 +1958,7 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-colchones",
     title: "Limpieza de Colchones",
     isActive: false,
-    shortDescription: "Eliminación de ácaros y alérgenos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Eliminación de ácaros y alérgenos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio profesional de limpieza y desinfección de colchones elimina ácaros, bacterias, hongos y alérgenos que se acumulan con el tiempo. Utilizamos equipos de aspiración profunda, vapor seco y tratamientos anti-ácaros para proporcionar un ambiente de descanso más limpio y saludable, especialmente beneficioso para personas con alergias o problemas respiratorios.",
     category: "auxiliares",
@@ -2103,7 +2078,7 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-sumideros",
     title: "Limpieza de Red de Sumideros",
     isActive: true,
-    shortDescription: "Prevención de inundaciones y problemas de drenaje.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativos móviles y plataforma web, soportado por la robusta infraestructura del ERP Ruppiest, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription: "Prevención de inundaciones y problemas de drenaje.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza y mantenimiento de redes de sumideros y sistemas de drenaje pluvial previene inundaciones y problemas de acumulación de agua. Eliminamos sedimentos, residuos y obstrucciones que pueden bloquear el flujo normal del agua, garantizando el funcionamiento óptimo del sistema de drenaje en épocas de lluvia.",
     category: "auxiliares",

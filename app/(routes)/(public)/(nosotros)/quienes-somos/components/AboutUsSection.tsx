@@ -62,7 +62,7 @@ export function AboutUsSection() {
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blueAmbiente/20 rounded-lg z-0"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                        src="/images/services/desinsectacion/desinsectacion-3.jpeg"
+                        src="/images/banners/banner-sonrisas.jpg"
                         alt="ProAmbiente - Saneamiento Ambiental"
                         width={600}
                         height={400}

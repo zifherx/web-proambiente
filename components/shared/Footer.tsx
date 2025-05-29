@@ -23,7 +23,7 @@ export function Footer() {
               className="mx-auto"
             />
             <p className="text-primary-foreground/90 max-w-xs">
-              Empresa especialziada en saneamiento ambiental, fumigaciones,
+              Empresa especializada en saneamiento ambiental, fumigaciones,
               gestión, monitoreo y control de plagas.
             </p>
             <div className="flex space-x-4 justify-center">
