@@ -515,7 +515,8 @@ export const ServiciosData: Service[] = [
     slug: "desratizacion",
     title: "Desratización",
     isActive: true,
-    shortDescription: "Control y eliminación de roedores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Control y eliminación de roedores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desratización está diseñado para eliminar de manera efectiva y segura las infestaciones de roedores en hogares, empresas e industrias. Utilizamos métodos avanzados y productos certificados que garantizan resultados duraderos sin comprometer la seguridad de las personas, mascotas o el medio ambiente. Servicio integrado con nuestro ERP, para un monitoreo de la trazabilidad en tiempo real para cumplir futuras auditorias.",
     category: "saneamiento",
@@ -602,7 +603,7 @@ export const ServiciosData: Service[] = [
       {
         id: 6,
         title: "Monitoreo y trazabilidad en tiempo real",
-      }
+      },
     ],
     coverImage: "desratizacion-2.jpg",
     galleryImages: [
@@ -655,7 +656,8 @@ export const ServiciosData: Service[] = [
     slug: "desinsectacion",
     title: "Desinsectación",
     isActive: true,
-    shortDescription: "Control y eliminación de insectos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Control y eliminación de insectos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desinsectación combate eficazmente todo tipo de insectos plaga como cucarachas, hormigas, moscas, mosquitos, pulgas y otros. Utilizamos técnicas avanzadas y productos biodegradables que eliminan las plagas existentes y previenen futuras infestaciones, garantizando espacios libres de insectos.",
     category: "saneamiento",
@@ -798,7 +800,8 @@ export const ServiciosData: Service[] = [
     slug: "desinfeccion",
     title: "Desinfección",
     isActive: true,
-    shortDescription: "Eliminación de microorganismos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Eliminación de microorganismos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de desinfección elimina virus, bacterias, hongos y otros microorganismos patógenos de superficies y ambientes. Utilizamos desinfectantes de amplio espectro y equipos de última generación para garantizar la higienización completa de espacios residenciales, comerciales e industriales, creando entornos más saludables y seguros.",
     category: "saneamiento",
@@ -916,7 +919,7 @@ export const ServiciosData: Service[] = [
       {
         id: 8,
         url: "desinfeccion-8.jpg",
-      }
+      },
     ],
     faqs: [
       {
@@ -946,7 +949,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-ambientes",
     title: "Limpieza de Ambientes",
     isActive: true,
-    shortDescription: "Servicio profesional para empresas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Servicio profesional para empresas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos un servicio integral de limpieza y mantenimiento para oficinas y espacios de trabajo. Nuestro equipo profesional se encarga de mantener impecables todas las áreas, desde escritorios y salas de reuniones hasta baños y áreas comunes, utilizando productos y técnicas que garantizan un ambiente laboral limpio, ordenado y saludable.",
     category: "auxiliares",
@@ -1076,7 +1080,7 @@ export const ServiciosData: Service[] = [
       {
         id: 11,
         url: "limpieza-ambientes-11.jpeg",
-      }
+      },
     ],
     faqs: [
       {
@@ -1123,7 +1127,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-tanques",
     title: "Limpieza de Tanques",
     isActive: true,
-    shortDescription: "Mantenimiento de cisternas y reservorios.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Mantenimiento de cisternas y reservorios.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio de limpieza y desinfección de tanques de agua garantiza que su suministro de agua se mantenga limpio y seguro. Eliminamos sedimentos, algas, bacterias y otros contaminantes que pueden acumularse en cisternas y reservorios, cumpliendo con todas las normativas sanitarias vigentes y proporcionando certificados de limpieza.",
     category: "auxiliares",
@@ -1284,7 +1289,8 @@ export const ServiciosData: Service[] = [
     slug: "control-aviar",
     title: "Control Aviar",
     isActive: true,
-    shortDescription: "Soluciones para el control de aves.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Soluciones para el control de aves.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos soluciones efectivas y humanitarias para el control de aves en edificios y estructuras. Implementamos sistemas que impiden la anidación y percha de aves sin causarles daño, protegiendo su propiedad de los problemas asociados con la presencia de aves como palomas, gaviotas y otras especies urbanas.",
     category: "saneamiento",
@@ -1381,7 +1387,7 @@ export const ServiciosData: Service[] = [
       {
         id: 3,
         url: "control-aviar-4.jpg",
-      }
+      },
     ],
     faqs: [
       {
@@ -1411,7 +1417,8 @@ export const ServiciosData: Service[] = [
     slug: "lamparas-insectocutoras",
     title: "Lámparas Insectocutoras",
     isActive: false,
-    shortDescription: "Control de insectos voladores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Control de insectos voladores.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Instalamos y mantenemos lámparas insectocutoras de alta eficiencia para el control de insectos voladores en interiores. Estos dispositivos atraen y eliminan moscas, mosquitos, polillas y otros insectos voladores de manera higiénica y discreta, siendo ideales para restaurantes, cocinas industriales, áreas de procesamiento de alimentos y otros espacios donde la presencia de insectos es inaceptable.",
     category: "auxiliares",
@@ -1531,7 +1538,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-campanas",
     title: "Limpieza de Campanas.",
     isActive: true,
-    shortDescription: "Mantenimiento de campanas extractoras.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Mantenimiento de campanas extractoras.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza de ductos y campanas y sistemas de extracción eliminando la acumulación de grasa y residuos en cocinas comerciales e industriales. Este mantenimiento es crucial para prevenir incendios, mejorar la eficiencia de los equipos, cumplir con normativas de seguridad y mantener un ambiente de trabajo saludable.",
     category: "auxiliares",
@@ -1661,7 +1669,7 @@ export const ServiciosData: Service[] = [
       {
         id: 11,
         url: "limpieza-campanas-11.jpg",
-      }
+      },
     ],
     faqs: [
       {
@@ -1691,7 +1699,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-pozos-septicos",
     title: "Limpieza de Pozos Sépticos",
     isActive: true,
-    shortDescription: "Mantenimiento preventivo y correctivo.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Mantenimiento preventivo y correctivo.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Ofrecemos un servicio completo de limpieza, mantenimiento y desatoro de pozos sépticos, cajas de registro y sistemas de drenaje. Utilizamos equipos de succión al vacío y técnicas especializadas para eliminar lodos, sedimentos y obstrucciones, previniendo desbordamientos, malos olores y problemas sanitarios.",
     category: "saneamiento",
@@ -1776,15 +1785,23 @@ export const ServiciosData: Service[] = [
         title: "Cumplimiento de normativas de saneamiento",
       },
     ],
-    coverImage: "limpieza-pozos-septicos-2.jpeg",
+    coverImage: "limpieza-pozos-septicos-3.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "limpieza-pozos-septicos-1.jpeg",
+        url: "limpieza-pozos-septicos-3.jpg",
       },
       {
         id: 2,
-        url: "limpieza-pozos-septicos-2.jpeg",
+        url: "limpieza-pozos-septicos-4.jpg",
+      },
+      {
+        id: 3,
+        url: "limpieza-pozos-septicos-5.jpg",
+      },
+      {
+        id: 8,
+        url: "limpieza-pozos-septicos-6.jpg",
       },
     ],
     faqs: [
@@ -1815,7 +1832,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-trampas-grasa",
     title: "Limpieza de Trampas de Grasa.",
     isActive: true,
-    shortDescription: "Mantenimiento para restaurantes y cocinas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Mantenimiento para restaurantes y cocinas.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza de trampas de grasa previene obstrucciones en sistemas de drenaje de restaurantes y cocinas industriales. Removemos la acumulación de grasas, aceites y sólidos que pueden causar bloqueos, malos olores y problemas con las autoridades sanitarias, ayudando a mantener sus instalaciones funcionando correctamente.",
     category: "saneamiento",
@@ -1899,36 +1917,20 @@ export const ServiciosData: Service[] = [
         title: "Prolongación de la vida útil del sistema de drenaje",
       },
     ],
-    coverImage: "limpieza-trampas-grasa-3.jpg",
+    coverImage: "limpieza-trampas-grasa-4.jpg",
     galleryImages: [
       {
         id: 1,
-        url: "limpieza-trampas-grasa-1.jpg",
-      },
-      {
-        id: 2,
-        url: "limpieza-trampas-grasa-2.jpg",
-      },
-      {
-        id: 3,
-        url: "limpieza-trampas-grasa-3.jpg",
-      },
-      {
-        id: 4,
         url: "limpieza-trampas-grasa-4.jpg",
       },
       {
-        id: 5,
+        id: 2,
         url: "limpieza-trampas-grasa-5.jpg",
       },
       {
-        id: 6,
+        id: 3,
         url: "limpieza-trampas-grasa-6.jpg",
       },
-      {
-        id: 8,
-        url: "limpieza-trampas-grasa-8.jpg",
-      }
     ],
     faqs: [
       {
@@ -1958,7 +1960,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-colchones",
     title: "Limpieza de Colchones",
     isActive: false,
-    shortDescription: "Eliminación de ácaros y alérgenos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Eliminación de ácaros y alérgenos.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio profesional de limpieza y desinfección de colchones elimina ácaros, bacterias, hongos y alérgenos que se acumulan con el tiempo. Utilizamos equipos de aspiración profunda, vapor seco y tratamientos anti-ácaros para proporcionar un ambiente de descanso más limpio y saludable, especialmente beneficioso para personas con alergias o problemas respiratorios.",
     category: "auxiliares",
@@ -2078,7 +2081,8 @@ export const ServiciosData: Service[] = [
     slug: "limpieza-sumideros",
     title: "Limpieza de Red de Sumideros",
     isActive: true,
-    shortDescription: "Prevención de inundaciones y problemas de drenaje.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
+    shortDescription:
+      "Prevención de inundaciones y problemas de drenaje.\nNuestros servicios incorporan un ecosistema digital integral que comprende aplicativo móvil y plataforma web, soportado por la robusta infraestructura del ERP, lo que nos posiciona como líderes en innovación tecnológica del sector.",
     fullDescription:
       "Nuestro servicio especializado de limpieza y mantenimiento de redes de sumideros y sistemas de drenaje pluvial previene inundaciones y problemas de acumulación de agua. Eliminamos sedimentos, residuos y obstrucciones que pueden bloquear el flujo normal del agua, garantizando el funcionamiento óptimo del sistema de drenaje en épocas de lluvia.",
     category: "auxiliares",
@@ -2208,11 +2212,15 @@ export const getServiceById = (id: number): Service | undefined => {
 };
 
 export const getServiceBySlug = (slug: string): Service | undefined => {
-  return ServiciosData.find((service) => service.slug === slug && service.isActive);
+  return ServiciosData.find(
+    (service) => service.slug === slug && service.isActive
+  );
 };
 
 export const getServicesByCategory = (category: ServiceType): Service[] => {
-  return ServiciosData.filter((service) => service.category === category && service.isActive);
+  return ServiciosData.filter(
+    (service) => service.category === category && service.isActive
+  );
 };
 
 export const getAllServiceCategories = (): ServiceCategories[] => {
@@ -2627,7 +2635,8 @@ export const ProductosData: Product[] = [
     name: "Cebadero Bora",
     description:
       "Ideal para establecimientos que requieran un aislamiento total del cebo con el medio ambiente, robusta y de mayor resistencia a caída de agua, posee dos compartimientos de alimentación, llave de seguridad doble, fijadores externos para pared.",
-    shortDescription: "Ideal para establecimientos que requieran un aislamiento total del cebo con el medio ambiente.",
+    shortDescription:
+      "Ideal para establecimientos que requieran un aislamiento total del cebo con el medio ambiente.",
     category: "trampas",
     price: "Consultar",
     features: [
@@ -2820,7 +2829,8 @@ export const ProductosData: Product[] = [
     name: "Cebadero Rock",
     description:
       "Protección de ingredientes tóxicos sobre niños y animales. protección del cebo químico de las lluvias. características: ideal para uso en jardines o áreas abiertas, con estaca para clavar en el suelo y llave de seguridad, exclusivo para cebo químico.",
-    shortDescription: "Protección de ingredientes tóxicos sobre niños y animales.",
+    shortDescription:
+      "Protección de ingredientes tóxicos sobre niños y animales.",
     category: "trampas",
     price: "Consultar",
     features: [
@@ -2950,8 +2960,7 @@ export const ProductosData: Product[] = [
     name: "Cebadero para moscas",
     description:
       "Dispositivo para el control de moscas. Cebadero para la colocación de insecticidas neonicotinoides en presentación de cebos granulados o similares.",
-    shortDescription:
-      "Dispositivo para el control de moscas.",
+    shortDescription: "Dispositivo para el control de moscas.",
     category: "trampas",
     price: "Consultar",
     features: [
@@ -3080,8 +3089,7 @@ export const ProductosData: Product[] = [
     name: "Platinum",
     description:
       "Gel insecticida / cucarachicida con adherencia a distintas superficies. Puede ser usado en establecimientos en funcionamiento. Producto autorizado por el MINSA.",
-    shortDescription:
-      "Gel insecticida / cucarachicida",
+    shortDescription: "Gel insecticida / cucarachicida",
     category: "insumos",
     price: "Consultar",
     features: [
@@ -3210,57 +3218,63 @@ export const ProductosData: Product[] = [
     id: 16,
     slug: "precision-health",
     name: "Precision Health",
-    description: "Es un potente insecticida no sistémico con contacto y acción estomacal. Modulador de canal de sodio; penetra con facilidad el esqueleto externo, circulando con la hemolinfa hasta estacionarse en los axones neuronales, actuando sobre la bomba de sodio, abriéndolos y produciendo su despolarización anormal y letal.",
-    shortDescription: "Es un potente insecticida no sistémico con contacto y acción estomacal.",
+    description:
+      "Es un potente insecticida no sistémico con contacto y acción estomacal. Modulador de canal de sodio; penetra con facilidad el esqueleto externo, circulando con la hemolinfa hasta estacionarse en los axones neuronales, actuando sobre la bomba de sodio, abriéndolos y produciendo su despolarización anormal y letal.",
+    shortDescription:
+      "Es un potente insecticida no sistémico con contacto y acción estomacal.",
     category: "insumos",
     price: "Consultar",
     features: [
       {
         id: 1,
         title: "Concentrado Emulsionable",
-        description: ""
+        description: "",
       },
       {
         id: 2,
         title: "Insecticida de uso Doméstico, Industrial y Salud Pública",
-        description: ""
+        description: "",
       },
       {
         id: 3,
         title: "Grupo químico Piretroide",
-        description: ""
-      }
+        description: "",
+      },
     ],
     applications: [
       {
         id: 1,
-        aplication: "En equipo aspersor, usar 5 ml de PRECISION HEALTH por cada litro de agua."
+        aplication:
+          "En equipo aspersor, usar 5 ml de PRECISION HEALTH por cada litro de agua.",
       },
       {
         id: 2,
-        aplication: "En mochila a motor, usar 20 ml de PRECISION HEALTH por cada litro de agua."
+        aplication:
+          "En mochila a motor, usar 20 ml de PRECISION HEALTH por cada litro de agua.",
       },
       {
         id: 3,
-        aplication: "Para termonebulizadores, usar de 20 ml de PRECISION HEALTH por litro de solvente (agua, diésel, o aceite vegetal)."
+        aplication:
+          "Para termonebulizadores, usar de 20 ml de PRECISION HEALTH por litro de solvente (agua, diésel, o aceite vegetal).",
       },
     ],
     coverImage: "precision-health.png",
     gallery: [
       {
         id: 1,
-        url: "precision-health.png"
-      }
+        url: "precision-health.png",
+      },
     ],
     icon: SprayCan,
     stock: "disponible",
-    isFeatured: true
+    isFeatured: true,
   },
   {
     id: 17,
     slug: "bomba-max",
     name: "Bomba Max",
-    description: "Es un novedoso insecticida formulado como concentrado emulsionable a partir de la mezcla de dos ingredientes activos, la Alfacipermetrina, piretroide de última generación y el Piriproxyfen, insecticida regulador de crecimiento que controla selectivamente los estadios inmaduros de la plagas.",
+    description:
+      "Es un novedoso insecticida formulado como concentrado emulsionable a partir de la mezcla de dos ingredientes activos, la Alfacipermetrina, piretroide de última generación y el Piriproxyfen, insecticida regulador de crecimiento que controla selectivamente los estadios inmaduros de la plagas.",
     shortDescription: "Es un novedoso insecticida concentrado emulsionable",
     category: "insumos",
     price: "Consultar",
@@ -3268,94 +3282,100 @@ export const ProductosData: Product[] = [
       {
         id: 1,
         title: "Líquido traslúcido",
-        description: ""
+        description: "",
       },
       {
         id: 2,
         title: "Incompatible con sustancias alcalinas",
-        description: ""
+        description: "",
       },
       {
         id: 3,
-        title: "Se comercializará en envases de polietileno Terftalato (PET) con tapón sello trilaminado de 3 capas",
-        description: ""
+        title:
+          "Se comercializará en envases de polietileno Terftalato (PET) con tapón sello trilaminado de 3 capas",
+        description: "",
       },
       {
         id: 4,
         title: "Presentaciones de 250 ml y 1 Litro",
-        description: ""
+        description: "",
       },
     ],
     applications: [
       {
         id: 1,
-        aplication: "Motomochila aplica 20-25 ML/ agua o diesel"
+        aplication: "Motomochila aplica 20-25 ML/ agua o diesel",
       },
       {
         id: 2,
-        aplication: "Aspersor aplica 10 ML / agua."
-      }
+        aplication: "Aspersor aplica 10 ML / agua.",
+      },
     ],
     coverImage: "bomba-max-1.png",
     gallery: [
       {
         id: 1,
-        url: "bomba-max-1.png"
-      }
+        url: "bomba-max-1.png",
+      },
     ],
     icon: SprayCan,
     stock: "disponible",
-    isFeatured: true
+    isFeatured: true,
   },
   {
     id: 18,
     slug: "cipervox-ec",
     name: "Cipervox EC",
-    description: "Es un poderoso insecticida formulado en emulsionable concentrado que combina dos poderosos ingredientes activos de distintos grupos químicos y mecanismos de acción. Se puede aplicar en ductos, elevadores, líneas de transportes, plantas de alimentos, almacenes en general y bodegas planas.",
-    shortDescription: "Es un poderoso insecticida formulado en emulsionable concentrado.",
+    description:
+      "Es un poderoso insecticida formulado en emulsionable concentrado que combina dos poderosos ingredientes activos de distintos grupos químicos y mecanismos de acción. Se puede aplicar en ductos, elevadores, líneas de transportes, plantas de alimentos, almacenes en general y bodegas planas.",
+    shortDescription:
+      "Es un poderoso insecticida formulado en emulsionable concentrado.",
     category: "insumos",
     price: "Consultar",
     features: [
       {
         id: 1,
         title: "Concentrado Emulsionable",
-        description: ""
+        description: "",
       },
       {
         id: 2,
         title: "Grupo químico: piretroide + organofosforado",
-        description: ""
+        description: "",
       },
       {
         id: 3,
         title: "Evite el contacto con la piel y ojos",
-        description: ""
-      }
+        description: "",
+      },
     ],
     applications: [
       {
         id: 1,
-        aplication: "Cipervox 10ml + 1000ml de agua en moscas, cucarachas y mosquitos."
+        aplication:
+          "Cipervox 10ml + 1000ml de agua en moscas, cucarachas y mosquitos.",
       },
       {
         id: 2,
-        aplication: "Tóxico para contacto, ingestión e inhalación con hombres y animales."
+        aplication:
+          "Tóxico para contacto, ingestión e inhalación con hombres y animales.",
       },
       {
         id: 3,
-        aplication: "Aplica en uso de equipos aspersores, pulveerizadores y atomizadores."
+        aplication:
+          "Aplica en uso de equipos aspersores, pulveerizadores y atomizadores.",
       },
     ],
     coverImage: "cipervox-ec.jpeg",
     gallery: [
       {
         id: 1,
-        url: "cipervox-ec.jpeg"
-      }
+        url: "cipervox-ec.jpeg",
+      },
     ],
     icon: SprayCan,
     stock: "disponible",
-    isFeatured: true
+    isFeatured: true,
   },
 ];
 
