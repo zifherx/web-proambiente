@@ -92,7 +92,7 @@ export function ProductCard({ index, product }: ProductCardProp) {
           </Link>
 
           <p className="mb-4 text-sm text-gray-600 line-clamp-2">
-            {product.name}
+            {product.description}
           </p>
 
           <div className="mt-auto flex items-center justify-between">

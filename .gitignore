@@ -19,6 +19,8 @@
 
 # production
 build
+dist
+/dit
 /build
 
 # misc
