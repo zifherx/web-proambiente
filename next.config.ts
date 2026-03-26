@@ -2,24 +2,24 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
+  allowedDevOrigins: ["local-origin.dev", "*.local-origin.dev"],
   images: {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '**'
-      }
-    ]
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
   output: "export",
-  distDir:"build",
-  assetPrefix: '',
+  distDir: "dist",
+  assetPrefix: "",
   webpack: (config) => {
     config.module.rules.push({
-      test: '/\.(pdf)$i',
-      type: 'asset/resourse'
-    })
+      test: "/\.(pdf)$i",
+      type: "asset/resourse",
+    });
     return config;
   },
   // turbopack: {
