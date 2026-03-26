@@ -27,9 +27,11 @@ import {
 } from "@/components/ui/select";
 
 import { createWhatsAppLinkForContact } from "@/lib/global";
+import { useRouter } from "next/navigation";
 
 export function FormularioSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -44,14 +46,16 @@ export function FormularioSection() {
 
   const onSubmit = (values: ContactFormValues) => {
     setIsSubmitting(true);
-    // console.log(values);
-    createWhatsAppLinkForContact({
+    console.log(values);
+    const message = createWhatsAppLinkForContact({
       cliente: values.nombre,
       correo: values.email,
       celular: values.telefono,
       servicio: values.servicio,
       mensaje: values.mensaje,
-    })
+    });
+
+    window.open(message, "_blank", "noopener,noreferrer");
 
     setTimeout(() => {
       form.reset();
